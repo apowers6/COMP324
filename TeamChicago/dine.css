@@ -1,0 +1,31 @@
+﻿body {
+}
+
+ #dineheader {
+     width:100%;
+     color:#4C97AB;
+     text-align:center;
+}
+
+ #dinetable {
+     width:100%;
+ }
+
+ #dinetablehead1 {
+     width:200px;
+ }
+ #dinetablehead2 {
+     width:200px;
+ }
+
+table, th {
+    border: 1px solid black;
+}
+
+.imgs {
+    height:50px;
+    width:50px;
+}
+#dinetablehead1, #dinetablehead2 {
+    background-color:#94D4E5;
+}
