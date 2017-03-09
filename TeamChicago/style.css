@@ -1,0 +1,145 @@
+/* This is the homepage CSS stylesheet. Created by Abby Powers */
+
+/* Heading styles */
+h1 {
+    display: inline-block;
+    font-size: 2.5em;
+    margin-top: 0.67em;
+    font-weight: bold;
+    color: black;
+    font-family: PT Sans;
+    text-align: center;
+}
+
+h2 {
+  font-size: 1.9em;
+  margin top: 0px;
+  font-family: PT Sans;
+  text-align: center;
+}
+
+
+h3{
+  font-size: 1.2em;
+  margin top: 0px;
+  font-family: PT Sans;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h4{
+  font-size: .9em;
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  display: inline-block;
+
+
+}
+
+.head-stars {
+list-style: none;
+margin-top: 3px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+padding:0px;
+text-align: center;
+font-family: PT Sans;
+
+}
+.head-stars li{
+    display:inline;
+    padding: 45px;
+  }
+
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0px;
+    text-align: center;
+    font-family: PT Sans;
+}
+.nav li{
+    display:inline;
+    padding: 10px;
+
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+.nav li a:hover {
+  color: #0073e6;
+}
+
+.mySlides {
+  display:center;
+
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+
+
+#contentBox div {
+    margin: auto;
+    width: 100%;
+    display: inline;
+
+}
+
+#contentBox .column {
+    float: left;
+    margin: 2;
+    width: 33%  ;
+    box-sizing: border-box;
+    border-style: solid;
+    padding: 2px;
+
+}
+
+.dine-icon{
+  margin-left: 10px;
+  margin-top: 2px;
+  margin-right: 0px;
+  margin-bottom: 3px;
+}
+
+.HP-article-links h4{
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding: 5px;
+  color: #000000;
+  font-size: 1.1em;
+
+}
+
+.HP-article-links h4:hover {
+  color: #5A6AD3;
+}
+
+p.about-us{
+  margin-left: 3px;
+  margin-top: 3px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  padding: 10px;
+  color: #000000;
+  font-size: 1.3em;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+
+
+}
+
+.about-stars{
+display: inline;
+
+
+}
