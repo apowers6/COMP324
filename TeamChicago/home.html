@@ -27,58 +27,10 @@
 <ul class="nav">
               <li class="first active"> <a href="home.html">Home</a> </li>
               <li> <a href="dine.html">Dine</a> </li>
-							<li> <a href="#">Go</a> </li>
-							<li> <a href="#">About</a> </li>
+							<li> <a href="go.html">Go</a> </li>
+							<li> <a href="about.html">About</a> </li>
 </ul>
 
-
-<!-- homepage slider -->
-
-
-<body>
-
-
-<div class="w3-content w3-display-container" style="max-width:800px">
-  <img class="mySlides" src="./pictures/Truck.jpg" style="width:100%">
-  <img class="mySlides" src="./pictures/ice cream.jpg" style="width:100%">
-  <img class="mySlides" src="./pictures/Pizza.jpg" style="width:100%">
-  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-  </div>
-</div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
 
 <!-- Three Article Columns -->
 
@@ -116,6 +68,27 @@ function showDivs(n) {
 <div class="column">
   <section class="Go-posts">
       <h2> <font color= "#A876C4"> Go </font> </h2>
+      <p> <h3> Current Chicago Buzzworthy Spots </h3> </p>
+
+        <article>
+          <span> <img class="dine-icon" <img class="icon icons8-Aquarium-Filled" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAET0lEQVRoQ+2ZTW7bVhDH/0O3cQAHqG9Q+wSRl41pRDlBlU1CraqeIAlQEt3F3hVkgSgnqLqSkk3UE1iGqHRp5wRRThAbSIDWhTnFsKL8SJHiI2WJrpG3k/A+5jfzZt7MkHBDBt0QDnwBuW6WzLVIz/FfAGgA2KpI+DGBOo/d3YN5588F6dmjNoifVAQQO5bBB013bz9LlhyQ4UcQbRpMO4+83ZMqgF7bo1pAfAxgbLnmdjkQx2dZeE1AYLlmpuLnWuSV87bBCN5UYYnkmQTj4WP3Xr+URRSzVs6SdysyLfLm6fHm319/ei8+wsxHTW+vXgVNz/b7IHwP5tP1f+5sP2zvnKbJkQnSs/1DEET4d+vnG/WsDZYNFyr01ucBgLtgDCzPfKAN0nP8pwDk/TgzmOpVRaxI4O7Pf25RcCFR8xsAzyzXbM/6UOKf+JWiH5vebmfZWtfZf6rcjCs2c7W6znCfQM+Z8aHpmVW95qlsPccXq9xNexxjIDFrBPyg+eue3M2Vjdf22/tMXGdmUeAWKEyLLpXJfCrBJ83xYyCKbwCMjgF6uUz/UASvTwJLEaXFfCUOYvvHINQSSc4JwB0DxtGiUCJ4gIsaQI0SgschGSeWZ+5Ef05BJpHhfY5KxmCMiWgA8JjYGMv8R969I3WdCCy/A+ZNGFwHo7aw4CmCsbG23fzlu1CGSxB71CLi34rY9qrmRs4bBRrdfdW0ZQpSZcquJoO9SaKqBcP00vJ25c1TLTIcEFF4JVY9CLQvhdMrZ/ScwZk1R1IuNXW6tIjji39cq3dDQ6HTGkUFCWuPVY2yfpGUL7qWlYGU9osESeUgZf1CxyKS50t2+X8aZ5Zrbi4UteSOE0hC35XASwUYPqL/NRq0RnrUiioxrS0kFeODNTb6AbEklirMGZg6zEE/SjolGf3rq081IqPB4AYRvk0eUwYEjD8sz5Sem/KOTNJ3TQ5E2uj+NKyTQYeyTuBun99p51WTXXvUAng/DUj3/Oi8qNd1maIoAmluNo3hklqIdbKSyrBsBqCWqaGVbn1uE/CD5nkz01gpNaYgk9r4Y5FN5/WZ1H269jCsa5INjDJnKvuerZ9vbEXWj6XxXcfvFNGQLkiWcoomieo+DPzedM1W9F8MpEhDTi2FRSAEGBSpKCfN8TDhKzOSDbvZmt32xzpOmObsANrr5xsH85w9DA5EL2YKuAI0af2EFBC9umQafhEchnV0NKSuBvUNGJ2LNfoghY8UbUZwcZ8ZrasosJhnuzupDbquhlXCB5HxJAZRQKsLTH1nuWa8HFffkViUKR6KF5Cr2NKsHnBmy3SRiFJMNP3Z8z72zP/QM2mI6R+1vJl5jfS5ILEG8vJk1Nk5t5Ge+zH0GsDkQogmckFkUoUwWhDaIJHtV9oyUlo9OndPyyLJ0Ayijs7rryNAco682mBuFUl3ClukjGCrWlPYIqsSrOg5X0CKamzZ82+MRf4FXkc7UZIxSfwAAAAASUVORK5CYII=" width="50" height="50">
+
+            <a class=HP-article-links-go href="#"> <h4> Family Weekend at Shedd Aquariam </h4> </a> </span>
+          </article>
+
+        <article>
+        <span>
+          <img class="dine-icon" <img class="icon icons8-World-Map" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAE5UlEQVRoQ+1azXIaRxDuXmKkilQV+QmCn8D4GNdSVp4g0iWGU/ATGFUZKjfhWwpSpc0TgE7Cvlh+AqMSco6Wn8DkDaQqO3EgbKdmdmYYhv3fRUUc7Q3tbE9/091f/4wQvpAHvxAccAtk3SypLDJojt4AQgnBOnjceXiah6IvWm/3CNwjJgsB2o879nEeck+ene+ihT0Auqx2KvtCvid60BqR2oRgSETPa79Whmk25hshHgLCrvH9OAugk59/L6H7zxEA7km51Y7NjTG3yBzINQB84y2kU7K+Oqj98t04DiCfja6JsCFktRHhWyEnMaAXrYtDIrcBiDsAoHQMBLIx2br7ufixgcAV8AAR9DemWwf7zoMrP0CvGu92/r7z6QgQ6uL9NQE5m5NtR//mpHlRB6BEgOZuBCWhy2sqFBrozj6w34FA5Aum3OfiJwcBfvIE0BWi5RQnX/8mlWNrJsU/n2onBQRwvDnZagSBZqLiADKtSwR/AFFdursMhUgg8uS5wNnMAYQf5oA8dyEiR5iaWY2fVFw3DAMEgCXdjZh1a51KW/eGxEAUoGfnu4DQRsRHukAiOgOCdlpiCAAkwir4cFIDkcozSnXJddhvC61GXlStAxKWV27kF5eZgcRhr5tYcwvkJk45yR6ZLMLodnrnr/suzMqAWAKCMgCVq93KXcH3b6QykhaTKJdkbWIgjPMRqRe0CcsbtY5dF7WaKkmCgLxsvn3kEu2gBWUiYkmuxA6D0zjBJQCwpDtGxDGRe2VBgf0Nfuw+PEtNv1EgRKbtV7v2k5Pm+VBQ8zWCVdfZjGf+4seeXiMlOX1WkpgyE1lkoZAM25mgT0THiNjYmG7V9azOK2Ca9VTiTIiAJVpTJhORCIhKhs3RWCv4llSR7hXG90n1l+vJKtzzqxbSAWmN+qrmMjQKA6GdHHcNAvdVCkAH1Y7NE3DqGJlbxD/go0BwIM3RKa9WZzPWn8jqOD4egstq136QDxDe0HhlszK5YKsojV42L8ouUA+QUXXyJ+iwUrkW295ksDh5gn/DWl2vGUr8xIm92GW8vrsOJgoItwTSuwXtRQsNaJW03MTjx6WZ6CStPnvHqupat2K2ykpcaov4xMsYCIaIMHStwpnJLIPmhQNIT/3MgGDt86QItCeplVUGbC1rB3jjRe44rDXIDsSbYKhSRAsanhjl70FrxGLKa0/Nh+hqY7p9L6yLjPLDzEDMUsRwHQVGjIL680HGEppTOcqJUtrvfWYgYWWL6ddiKNFXbbKhUVSchQHMDMSPwRQlu/S9n18PWiNWCIoR01y9KCByPkaFwpOlGBTjq1SspZ+QqVwYVWoF5TykQljJZ8C3lN1zsYhnFVXtAhvV1Lq2f2Czta3zNgIe6gdBAdZja5aKVZ/snh8QXTmC19WurcaYpm+LwFd1Vtwcocl5X+3YC5VBbkB05QjouTl3WkikRokTZo2ABLxC19KUi6OYZLsoa5jW5MmxYA1XFuw8TsTQbnO6vRcnucXJ2HFzSm6uFXfDVa37/wBhBV1eY9AV31jxes8vIbKxy33uCv+dGytFywu3uoJZWH+89jdW5lXD0vW0d8Gz/jdWJh0H3rOv+42VyYaR/zCwrjdWiYHID2TyW5cbq9RA5IfrcmOVGciqMnVWuZExknWDm/r+FshNnXTcff4FBS1Db5Njn4wAAAAASUVORK5CYII=" width="50" height="50">
+          <a class=HP-article-links-go href="#"> <h4> World War II Exhibit Now! </h4> </a>
+        </span>
+      </article>
+
+      <article>
+      <span>
+        <img class="icon icons8-Movie-Projector" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEhElEQVRoQ+2ZTVIbRxTH/28SUGIt4pwg5ASBbRgKcYLYm3i0Mj4BYiFVdpG3kqsiTgCsJGcDPoFFMdhLxAkinyB4QRILe17qjbrFaDya6Wl9JFSpVwiNet7vffW/uwlzHi9r/lNmlEAoAVgLX8foAeiB6dR7sflqFibQLCZJmuNl7c0jRvDbyPjJL+oTnP0njR9Pp7FlLiCdqn8Iwm7ofMY7IrQcpu7PzU2JBH6vXqwHxCVmVIjwnQJoeQ133xZm5iCd6kULxHvKoH2v4bbSjOvU/AoAiRzAdOA1N+Vz7pEJ0v7l7RoFn/YwzPN1leNdEHoO07H2svxfpdOJ/O0wbUS/S7NMRehSniE4j23SLBWkU/PFU1keahUGxeePWxvXnZr/h6qJzEjEwSKR6XsN9/u8IZkI0qn6l3cRoAMHOBrLcWD3LoX4lPDFMSM4kZooN91hd8o52lW/LzVjE5VEkEiev3eYSpNSRKVEF8A3YL4G0UMAuaOheXVUGDguN9ywWZiOz0BUTUiKGOV5NL9NfzPJuNFcjJ7XdDdMIYa1FRujaOToIO2af0TAU5nKa7iZDSTNwE7NZ5t5EkCGtWHbdf4/IJYe0Z7M44B4ZHRqMfNZubklksZ4fB6RKUFmUexgvPKa7iNjiqQaaVfPu0S0ncezsYK3WgfEaL0OccA75Rdb0g2Nx8yLXb05dwsetV7LdWim7ZeZnhHxYd42HI2oTTQS228YYi38mK8dODupCyKC1+FCqNr1mGhkrnjNrYPUdls93wNRKCwZ/Lzc2Kob51PkwTSJcgrCT+pZkeEjgRh6ELynpXq8OGMKuA/mlgPnbFziBNsgEh0XyplpICZGRIO2a+d1Av1q46E8v8mbTrLrfNJwj6PvSF2FTyqXDz+s3Lweicc81uV5ltEr3BZ3REGn/SzcNgOSemvxhTddxisFLIrWIaeyOvi6m/UyU/vFSYPVv0sBB61wl5iir6IAen5jkGg7/Oq2uD4rgDioAP2zctMTGOl65ebmkX4mDqC2zeHW2BhEL4w2ewPTqNwZHB5UnGhpkgQAUF0gJ4nKyV1LSZXCoPjtvKKhQcJaXL35U33ujzoZ450G0M9ag0yrZk2jow0MW3ECwL0DiddJ3BH3JiJZGbAEyfKQaQ1kPWe6xV1GZBmRrFyKfb9MLeWQzJV9mVqWqUXAbnyvEZ3q3nQtrbcIqCcBWYMsWjRGpTqAfhzIBkSuyX74L2R8u3qxC3A9ci03ArIB0Vdi/cKguDEvKa8kvNxWySHE2HlYEpCW+MYbK8nVTs0PoyIhRkCVwscHZ7MCCgG+/GsbDstRkEBceQ13eLUXGwlA5jtEmUt5S44uBWae46owKJaynBQFyhURbblMQMSSarMGumKmVnSfbuItsSf+m6kuZaLHRUnXZcoBh3Itl3ZiaWJ81jPWIJMgQuPB217TfSYvXxSMFUgqhDrEBuNokTC5QQwg3oddTuppgTC5QEwg5Dp75fZB/8PqzbDbLQjGGMQUQp+4j7XuBcAYgeSFiB28LSQymSC2EIuG+Re1mttgb/CAGAAAAABJRU5ErkJggg==" width="50" height="50">
+        <a class=HP-article-links-go href="#"> <h4> Summer Outdoor Movies </h4> </a>
+      </span>
+    </article>
   </section>
 </div>
 
@@ -132,5 +105,41 @@ function showDivs(n) {
 </div>
 
 </body>
+
+<!--footer-->
+<footer class="footer">
+  <table>
+    <tr>
+      <th><h4>Site</h4></th>
+      <th><h4>Contact</h4></th>
+    </tr>
+    <tr>
+      <td class="footer-links"><h4><a href="dine.html">Dine</a></h4></td>
+      <td class="footer-links"><h4><a href="#">Email Us</a></h4></td>
+    </tr>
+    <tr>
+      <td class="footer-links"><h4><a href="go.html">Go</a></h4></td>
+      <td class="footer-links"><h4><a href="#">Subscribe!</a></h4></td>
+    </tr>
+    <tr>
+      <td class="footer-links"><h4><a href="about.html">About</a></h4></td>
+      <td class="footer-links"><h4><a href="#">Facebook</a></h4></td>
+    </tr>
+    <tr>
+      <td> &nbsp;</td>
+      <td class="footer-links"><h4><a href="#">Twitter</a></h4></td>
+    </tr>
+    <tr>
+      <td> &nbsp;</td>
+      <td class="footer-links"><h4><a href="#">Instagram</a></h4></td>
+    </tr>
+    <tr>
+      <td> &nbsp;</td>
+      <td> &nbsp;</td>
+    </tr>
+  </table>
+
+
+</footer>
 
 </html>

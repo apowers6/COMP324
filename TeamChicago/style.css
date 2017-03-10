@@ -20,11 +20,17 @@ h2 {
 
 
 h3{
+    display: inline-block;
   font-size: 1.2em;
-  margin top: 0px;
+  margin: 10px;
   font-family: PT Sans;
   text-align: center;
   font-weight: lighter;
+}
+
+h3.footer-header {
+  text-align: left;
+
 }
 
 h4{
@@ -73,20 +79,16 @@ font-family: PT Sans;
     font-size: 1.2em;
 }
 .nav li a:hover {
-  color: #0073e6;
+  color: #F70808;
 }
 
-.mySlides {
-  display:center;
 
-}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
 
 
 
 #contentBox div {
     margin: auto;
+    margin-bottom: 20px;
     width: 100%;
     display: inline;
 
@@ -95,7 +97,7 @@ font-family: PT Sans;
 #contentBox .column {
     float: left;
     margin: 2;
-    width: 33%  ;
+    width: 33%;
     box-sizing: border-box;
     border-style: solid;
     padding: 2px;
@@ -124,6 +126,21 @@ font-family: PT Sans;
   color: #5A6AD3;
 }
 
+.HP-article-links-go h4{
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding: 5px;
+  color: #000000;
+  font-size: 1.1em;
+
+}
+
+.HP-article-links-go h4:hover {
+  color: #A876C4;
+}
+
 p.about-us{
   margin-left: 3px;
   margin-top: 3px;
@@ -140,6 +157,43 @@ p.about-us{
 
 .about-stars{
 display: inline;
+
+}
+
+
+
+table {
+    font-family: 'Lato', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+td, th, tr {
+    text-align: left;
+    padding: 8px;
+    background-color: #E7E7E7;
+}
+
+th.h4{
+  font-size: 1.4em;
+}
+
+.footer{
+  margin-top: 20px;
+  height: 60px;
+}
+
+.footer-links a{
+  color: #000000;
+  text-decoration: none;
+  text-align: left;
+
+
+}
+.footer-links a:hover{
+
+    color: #F70808;
 
 
 }
