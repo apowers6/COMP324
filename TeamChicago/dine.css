@@ -3,11 +3,44 @@ h1 {
     display: inline-block;
     font-size: 2.5em;
     margin-top: 0.67em;
+    margin-bottom: 0;
     font-weight: bold;
     color: black;
     font-family: PT Sans;
     text-align: center;
 }
+
+h2 {
+  font-size: 1.5em;
+  margin top: 0px;
+  font-family: PT Sans;
+  font-weight: lighter;
+  text-align: center;
+}
+
+
+h3{
+    display: inline-block;
+  font-size: 1.3em;
+  margin: 10px;
+  font-family: PT Sans;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h3.footer-header {
+  text-align: left;
+
+}
+
+h4{
+  font-size: .9em;
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  display: inline-block;
+}
+
 .head-stars {
 list-style: none;
 margin-top: 3px;
@@ -44,34 +77,32 @@ font-family: PT Sans;
     font-size: 1.2em;
 }
 .nav li a:hover {
-  color: #0073e6;
+  color: #F70808;
 }
 
- #dineheader {
-     width:100%;
-     color:#4C97AB;
-     text-align:center;
+#dineheader {
+  text-align: center;
 }
 
- #dinetable {
-     width:100%;
- }
-
- #dinetablehead1 {
-     width:200px;
- }
- #dinetablehead2 {
-     width:200px;
- }
-
-table, th {
-    border: 1px solid black;
+table{
+  table-align: center;
 }
 
-.imgs {
-    height:50px;
-    width:50px;
+td.dine-links{
+  width: 600px;
 }
-#dinetablehead1, #dinetablehead2 {
-    background-color:#94D4E5;
+
+td.image-cells{
+  width: 120px;
+}
+
+.dine-links a{
+  color: #000000;
+  text-decoration: none;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+}
+
+.dine-links a:hover {
+  color: #5A6AD3;
 }

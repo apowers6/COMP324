@@ -1,4 +1,4 @@
-/* This is the homepage CSS stylesheet. Created by Abby Powers */
+/* This is the primary CSS stylesheet. Created by Abby Powers */
 
 /* Heading styles */
 h1 {
@@ -39,8 +39,6 @@ h4{
   font-family: 'Lato', sans-serif;
   text-align: center;
   display: inline-block;
-
-
 }
 
 .head-stars {
@@ -134,11 +132,13 @@ font-family: PT Sans;
   padding: 5px;
   color: #000000;
   font-size: 1.1em;
+  text-align: center;
 
 }
 
 .HP-article-links-go h4:hover {
   color: #A876C4;
+  text-align: center;
 }
 
 p.about-us{
@@ -175,14 +175,8 @@ td, th, tr {
     background-color: #E7E7E7;
 }
 
-th.h4{
-  font-size: 1.4em;
-}
 
-.footer{
-  margin-top: 20px;
-  height: 60px;
-}
+
 
 .footer-links a{
   color: #000000;
@@ -194,6 +188,5 @@ th.h4{
 .footer-links a:hover{
 
     color: #F70808;
-
 
 }
