@@ -97,6 +97,10 @@ td.image-cells{
   width: 120px;
   padding-bottom: 50px;
 }
+img.dine-images{
+  width: 200px;
+  height:120px;
+}
 
 .dine-links a{
   color: #000000;

@@ -156,8 +156,9 @@ p.about-us{
 
 .hp-links{
   border-right: solid 2px #000000;
-
+  text-align: left;
 }
+
 
 table.footer-table {
     font-family: 'Lato', sans-serif;
@@ -202,27 +203,95 @@ width: 70%;
   width: 30%;
   margin-left: auto;
   margin-right:0;
+  margin-top: 45px;
 }
 
 #homepage-slider{
   margin-left: auto;
-  margin-right:20px;
+  margin-right:150px;
   margin-top: 10px;
-  width:74%;
+  width:100%;
 
 }
 
 #sidebar{
-  width: 14%;
+  width: 17%;
   border-style: double;
-  border-width: 12px;
+  border-width: 10px;
   float: left;
+  margin-left: 50px;
   padding: 17px;
-  overflow-y: scroll
+  height: 300px;
 }
+
+#sidebar-articles{
+  overflow-y: scroll;
+  height: 180px;
+}
+
+
+.sidebar-links h4{
+  text-align: left;
+  color: black;
+
+}
+
+#sidebar-articles::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#sidebar-articles::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+#sidebar-articles::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D62929;
+}
+
 
 
 #homepage-body{
   width: 100%;
   overflow: auto;
+}
+
+.button {
+    border-color: #F70808;
+    border-style: solid;
+    border-width: 3px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    font-size: 12px;
+    margin:0 auto;
+    display: block;
+}
+
+.button:hover{
+  border: 3px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: #F70808;
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #F70808;
+}
+
+.button a{
+  color: #000000;
+  font-size: 1.1em;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  text-decoration: none;
 }

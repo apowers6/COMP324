@@ -90,8 +90,14 @@ td.dine-links{
 }
 
 td.image-cells{
-  width: 120px;
+  width: 200px;
+  height: 120px;
   padding-bottom: 50px;
+}
+
+img.go-images{
+  width: 200px;
+  height:120px;
 }
 
 .dine-links a{
