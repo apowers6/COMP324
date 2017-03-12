@@ -1,4 +1,4 @@
-﻿<!--Welcome to our Homepage. Created by Abby Powers, March 2017-->
+<!--Welcome to our Homepage. Created by Abby Powers, March 2017-->
 <!DOCTYPE html>
 
 <html>
@@ -8,7 +8,9 @@ header (4 stars and "Unbeaten")-->
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Abigail Powers, 2017">
+    <link rel="stylesheet" href="style.css">
     <a href="https://icons8.com"> </a>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href='//fonts.googleapis.com/css?family=Arya' rel='stylesheet'>
@@ -26,8 +28,7 @@ header (4 stars and "Unbeaten")-->
 <hr width="100%" color="#00000" size="4">
 </head>
 
-<!--Body Section: navigation (4 links, uniform across all pages), Homepage Slider,
-and 3 Article Columns. -->
+<!--Body Section: navigation (4 links, uniform across all pages), Homepage Slider,Dine Column, Go Column, About Column. -->
 
 <body>
 
@@ -39,90 +40,101 @@ and 3 Article Columns. -->
 							<li> <a href="about.html">About</a> </li>
 </ul>
 
-
-<!-- Three Article Columns: Dine, Go, and About Sections. Displays
-recent and interesting articles. Uniform colors used to attract user. Icons
-used for artistic appeal. -->
-
-<div id="contentBox">
-
-<div class="column">
-
-<!--dine column, inline icon and links-->
-    <section class="Dine-posts">
-      <h2> <font color= "#5A6AD3"> Dine </font> </h2>
-      <p> <h3> New findings from Chicago's foodie sphere </h3> </p>
-
-        <article>
-          <span> <img class="dine-icon" <img class="icon icons8-Cinnamon-Roll-Filled" src="data:image/png;base64,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" width="50" height="50">
-
-            <a class=HP-article-links href="#"> <h4> Ann Sather Is A Standing Classic </h4> </a> </span>
-          </article>
-
-        <article>
-        <span>
-          <img class="dine-icon" <img class="icon icons8-Deciduous-Tree-Filled" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAD50lEQVRoQ+1az1LaYBDfjUqnHR3tExSPnRaKT1B8AulNuKg3yUV4AvUJTC/Bm3gJ3qRPUPoEpdBOj+oTSEdLp3XMdpYkGCR/voSEIZ1+J2fY7O5vd7/994nwjxyMGsfmbjePCHuIUGDeRNBChFY/tfi+qaz2opZn8YsUSEnunADgtrOy1AOYW9fUV+04wIQGUqhcrDz9fbMPAAVETIspRz1dX1g7O355KUYvThUKSEn+lgO4/wiAK+KiDEoiaBLNV6MGEwpIsdy5EPeCS6ARXSJiXVMzh0GN4UQvBIQ9QHS/TLRwJUl3eQA8iUK46aO6pmZ3+G9LTqOW/RSUvyeQktzdB6BKmBAKogiHGyKxgWyhSvV+aqkqmulcgXhnoCBqTkIrnukcgZTkzna04TMJGGhrambNj4MjkCgus5/gIL8T0btGLdv0+sbFI10KImgKtIeamjkIBKRY7nCBO5+CckFEiAPhSv3sz82Re4sRRG60tERYbdReK0IeKcndzwCQi1aFaLgRkfLrydKhVyoe3JEZy1Iu6L1T8QBIsdzlVvttNPaLk4t702kCmbx3ilN9O28iOm3UsmOjguWRNiK8mZYyk8nhEENF1+dP7R205ZE6Im5NJmDaX4/eGfOy83yhc9ZK2KFeP7W0ytlsWNmL5a8VRDpKGBKw7sxIi2JWdS48LxIEaNBUunW/TQDcSAoYTc2gG5DruIepqIxEBF8atUxuDMiMNo2uuMfuiLHeuT1HhHxU1oqbDxH9IFrIcT0ZeMTofG8/zmrT6GQQBoE4l7cWfmYd6fLQwsu2RBy+F0TzBYfKnpSm0bLzeCdseWTWRluByKAPmpodLMr5JBgIANePR0A6iSqAlvK6Dutnx5nW0CP8piFJwFkrUaefWnxujb8PTaPcVRBgL0FIrjQ1M3zOmLmmkVMrAKURcdnbqLSjqdn6yB15/AFvxXVdX0Gkpj9Dfx8axWtcMW4viLAuSZDXdWhJktTjAmdu5Vtusp3GXb9tfNBCeUWECqLO46jpdqnJyhlvi8Q75TQi1wFo2i362Bybu9/TiHcH9smVvYVIitN3vu8jxXLHdQy2LMMWjOttkAEyKL8XLl8gBiPOalQhgjy728syTG+8qxiHiJd+xIs/XkIPF9FhHnO8glgIiP8tGKUoyf5LcHsxC8rfif4/EDcrmiPBtZ+VZ94johOmvSr7gRb5PbLQMibMnxuIuiIy74u8QokA8CyIIgzMTLZFxPViUIkF//thmM+41hwQUTuKDBbKI6LhI2KQBxrqEUG9UctWg31nUIcCUpLjG43DhlwoIPF4xLCsfcYI4plQQIIImBbtX7n/zkKjHpJ/AAAAAElFTkSuQmCC" width="50" height="50">
-          <a class=HP-article-links href="#"> <h4> North Pond Provides A+ Setting for Dinner </h4> </a>
-        </span>
-      </article>
-
-      <article>
-      <span>
-        <img class="dine-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEE0lEQVRoQ+2ZTVIaQRSA3xt/YlJa4QbBZSqBcAPJCSQ7mY24k8lCcwLNCUI24E7dgLvgCcQTiBArS80NTEmIMbFfqqdBhmGGmZ7pxpRlr7R43f2+16/fTw/CAxn4QDjgEUTHSa6sf0si3i4BUA4RkgCQEfvQJRE2EaHenZ3fr5cWL937/xcnsrLeziLCBiLkgg3EoWCtVknXnbITAzHft5aJQRYAe1YWaiBCYmD5YIy+BGPw9mAn1ej/rx3EtM4yRLdfEJG7isJBh9Vy+u4EtYJwnzeMPycAyK2ufFTLqTv9tYLkrXYJATaUE/QWnBiIabUKjOEF3/d6br45d92x74dhQJYIeGR6ExWSCE5rldTdfdN6IkFK9qJVKQoQERzXKqms8sueL7aWEO2INLgPSM3uzMKxV9x3QppWqw6Ay0Hgzt+J8EOt8rqkDMS02ltEVAiISk0AqAMYh9XyK/730BBB4e+5DAhj04sHOy9tt7XDuMxkt6xptXYBsCC3hp2lG4jQICIbCg1IAOFQghu3ptutYoGYVnsbALbkINRIE9E7ZZk9X2ydq09yoUC/V8upkeQaybX6Ps1DICA0EMAu4oh4CUIZRHweSqUIQu7SJNYd4WUHYyzhrHWGo9BZhoAVQAQBhVDDZYlzz0gnEtaQuc3zxNObzraK7E5EP349WUj6hfLQILZSv38uI5LwT6Qmu505dYZAP0CR+Kge53S8LrjUiQiAqy1E3PRRtElEDcSpfa8c0Z/DyxUA3A17mk45AvhcK6f89g/OIxzi2U3nKGy/QEQ8QdXRgIY7o+eLXzcR6ZMsiLum8ps/1rXyxfYRIo9E0YYA40UjJaOE6qB7Ecq1uF8bBvDTuJfBIRCnsuPcNRSI7l4i2Dq0Vi2n94LlhISva+WLbV4PLXHLAGCv0NOb7AZKy0GMBeG1FGPTe+7wKgLAFe+Vc7Kld0jrfqyWU7yOkxqh84jXqr2evKQKiIj2a5W0ZDU9xrV6tdQqEY847KJWSR+PM0+Uxsi9XhwIX9fKF1t7iLjq2qwJwPsHvOBZnZgoFEVXSNtxXkriQniCROnWpJzZJawCwhNkkmFXFYQ3yIQaJpUQIyC8zwBgJ3FcJcxc1RAjIFELuzDK92V0QHiAeEYrGT3HyuqC8AARZYkyzR0L6YTwuCNt0gEBIF87yeoxVKKYlg4Q/RBaT4RXzUSY83tpkbV4kLyWE+HtKaJRCNsUBSkZ5vchkH4PEmaivwwddmcXCkEv8PH2GJ09DBL/C1OkXkIF1BBI1D79PlzJDT/SWMm4l3ggwFKUjk7FKTjXGAERD3Idnhh9v+/1Abqz86VJ3wU/A3i2ur2HOf6yx9vOF4MHCPEA5/42odq6UdaL1bNH2VDXnEcQXZaNuu4/CQzsQqrBwwMAAAAASUVORK5CYII=" width="50" height="50">
-        <a class=HP-article-links href="#"> <h4> Your French Fix at Northside's MK </h4> </a>
-      </span>
-    </article>
-
-    </section>
+<!--Homepage slider, content based off w3schools.com Slideshow.CSS examples-->
+<div class="homepage-slider" style="max-width:500px">
+  <img class="mySlides" src="./images/Truck.jpg" style="width:100%">
+  <img class="mySlides" src="./images/ice cream.jpg" style="width:100%">
+  <img class="mySlides" src="./images/Pizza.jpg" style="width:100%">
 </div>
 
-<!--Go column, inline icon and links-->
-<div class="column">
-  <section class="Go-posts">
-      <h2> <font color= "#A876C4"> Go </font> </h2>
-      <p> <h3> Current Chicago Buzzworthy Spots </h3> </p>
+<script>
 
-        <article>
-          <span> <img class="dine-icon" <img class="icon icons8-Aquarium-Filled" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAET0lEQVRoQ+2ZTW7bVhDH/0O3cQAHqG9Q+wSRl41pRDlBlU1CraqeIAlQEt3F3hVkgSgnqLqSkk3UE1iGqHRp5wRRThAbSIDWhTnFsKL8SJHiI2WJrpG3k/A+5jfzZt7MkHBDBt0QDnwBuW6WzLVIz/FfAGgA2KpI+DGBOo/d3YN5588F6dmjNoifVAQQO5bBB013bz9LlhyQ4UcQbRpMO4+83ZMqgF7bo1pAfAxgbLnmdjkQx2dZeE1AYLlmpuLnWuSV87bBCN5UYYnkmQTj4WP3Xr+URRSzVs6SdysyLfLm6fHm319/ei8+wsxHTW+vXgVNz/b7IHwP5tP1f+5sP2zvnKbJkQnSs/1DEET4d+vnG/WsDZYNFyr01ucBgLtgDCzPfKAN0nP8pwDk/TgzmOpVRaxI4O7Pf25RcCFR8xsAzyzXbM/6UOKf+JWiH5vebmfZWtfZf6rcjCs2c7W6znCfQM+Z8aHpmVW95qlsPccXq9xNexxjIDFrBPyg+eue3M2Vjdf22/tMXGdmUeAWKEyLLpXJfCrBJ83xYyCKbwCMjgF6uUz/UASvTwJLEaXFfCUOYvvHINQSSc4JwB0DxtGiUCJ4gIsaQI0SgschGSeWZ+5Ef05BJpHhfY5KxmCMiWgA8JjYGMv8R969I3WdCCy/A+ZNGFwHo7aw4CmCsbG23fzlu1CGSxB71CLi34rY9qrmRs4bBRrdfdW0ZQpSZcquJoO9SaKqBcP00vJ25c1TLTIcEFF4JVY9CLQvhdMrZ/ScwZk1R1IuNXW6tIjji39cq3dDQ6HTGkUFCWuPVY2yfpGUL7qWlYGU9osESeUgZf1CxyKS50t2+X8aZ5Zrbi4UteSOE0hC35XASwUYPqL/NRq0RnrUiioxrS0kFeODNTb6AbEklirMGZg6zEE/SjolGf3rq081IqPB4AYRvk0eUwYEjD8sz5Sem/KOTNJ3TQ5E2uj+NKyTQYeyTuBun99p51WTXXvUAng/DUj3/Oi8qNd1maIoAmluNo3hklqIdbKSyrBsBqCWqaGVbn1uE/CD5nkz01gpNaYgk9r4Y5FN5/WZ1H269jCsa5INjDJnKvuerZ9vbEXWj6XxXcfvFNGQLkiWcoomieo+DPzedM1W9F8MpEhDTi2FRSAEGBSpKCfN8TDhKzOSDbvZmt32xzpOmObsANrr5xsH85w9DA5EL2YKuAI0af2EFBC9umQafhEchnV0NKSuBvUNGJ2LNfoghY8UbUZwcZ8ZrasosJhnuzupDbquhlXCB5HxJAZRQKsLTH1nuWa8HFffkViUKR6KF5Cr2NKsHnBmy3SRiFJMNP3Z8z72zP/QM2mI6R+1vJl5jfS5ILEG8vJk1Nk5t5Ge+zH0GsDkQogmckFkUoUwWhDaIJHtV9oyUlo9OndPyyLJ0Ayijs7rryNAco682mBuFUl3ClukjGCrWlPYIqsSrOg5X0CKamzZ82+MRf4FXkc7UZIxSfwAAAAASUVORK5CYII=" width="50" height="50">
+var myIndex = 0;
+carousel();
 
-            <a class=HP-article-links-go href="#"> <h4> Family Weekend at Shedd Aquariam </h4> </a> </span>
-          </article>
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
 
-        <article>
-        <span>
-          <img class="dine-icon" <img class="icon icons8-World-Map" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAE5UlEQVRoQ+1azXIaRxDuXmKkilQV+QmCn8D4GNdSVp4g0iWGU/ATGFUZKjfhWwpSpc0TgE7Cvlh+AqMSco6Wn8DkDaQqO3EgbKdmdmYYhv3fRUUc7Q3tbE9/091f/4wQvpAHvxAccAtk3SypLDJojt4AQgnBOnjceXiah6IvWm/3CNwjJgsB2o879nEeck+ene+ihT0Auqx2KvtCvid60BqR2oRgSETPa79Whmk25hshHgLCrvH9OAugk59/L6H7zxEA7km51Y7NjTG3yBzINQB84y2kU7K+Oqj98t04DiCfja6JsCFktRHhWyEnMaAXrYtDIrcBiDsAoHQMBLIx2br7ufixgcAV8AAR9DemWwf7zoMrP0CvGu92/r7z6QgQ6uL9NQE5m5NtR//mpHlRB6BEgOZuBCWhy2sqFBrozj6w34FA5Aum3OfiJwcBfvIE0BWi5RQnX/8mlWNrJsU/n2onBQRwvDnZagSBZqLiADKtSwR/AFFdursMhUgg8uS5wNnMAYQf5oA8dyEiR5iaWY2fVFw3DAMEgCXdjZh1a51KW/eGxEAUoGfnu4DQRsRHukAiOgOCdlpiCAAkwir4cFIDkcozSnXJddhvC61GXlStAxKWV27kF5eZgcRhr5tYcwvkJk45yR6ZLMLodnrnr/suzMqAWAKCMgCVq93KXcH3b6QykhaTKJdkbWIgjPMRqRe0CcsbtY5dF7WaKkmCgLxsvn3kEu2gBWUiYkmuxA6D0zjBJQCwpDtGxDGRe2VBgf0Nfuw+PEtNv1EgRKbtV7v2k5Pm+VBQ8zWCVdfZjGf+4seeXiMlOX1WkpgyE1lkoZAM25mgT0THiNjYmG7V9azOK2Ca9VTiTIiAJVpTJhORCIhKhs3RWCv4llSR7hXG90n1l+vJKtzzqxbSAWmN+qrmMjQKA6GdHHcNAvdVCkAH1Y7NE3DqGJlbxD/go0BwIM3RKa9WZzPWn8jqOD4egstq136QDxDe0HhlszK5YKsojV42L8ouUA+QUXXyJ+iwUrkW295ksDh5gn/DWl2vGUr8xIm92GW8vrsOJgoItwTSuwXtRQsNaJW03MTjx6WZ6CStPnvHqupat2K2ykpcaov4xMsYCIaIMHStwpnJLIPmhQNIT/3MgGDt86QItCeplVUGbC1rB3jjRe44rDXIDsSbYKhSRAsanhjl70FrxGLKa0/Nh+hqY7p9L6yLjPLDzEDMUsRwHQVGjIL680HGEppTOcqJUtrvfWYgYWWL6ddiKNFXbbKhUVSchQHMDMSPwRQlu/S9n18PWiNWCIoR01y9KCByPkaFwpOlGBTjq1SspZ+QqVwYVWoF5TykQljJZ8C3lN1zsYhnFVXtAhvV1Lq2f2Czta3zNgIe6gdBAdZja5aKVZ/snh8QXTmC19WurcaYpm+LwFd1Vtwcocl5X+3YC5VBbkB05QjouTl3WkikRokTZo2ABLxC19KUi6OYZLsoa5jW5MmxYA1XFuw8TsTQbnO6vRcnucXJ2HFzSm6uFXfDVa37/wBhBV1eY9AV31jxes8vIbKxy33uCv+dGytFywu3uoJZWH+89jdW5lXD0vW0d8Gz/jdWJh0H3rOv+42VyYaR/zCwrjdWiYHID2TyW5cbq9RA5IfrcmOVGciqMnVWuZExknWDm/r+FshNnXTcff4FBS1Db5Njn4wAAAAASUVORK5CYII=" width="50" height="50">
-          <a class=HP-article-links-go href="#"> <h4> World War II Exhibit Now! </h4> </a>
-        </span>
-      </article>
+<!--Go and Dine Article Columns-->
+<div id="homepage-table">
 
-      <article>
-      <span>
-        <img class="dine-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEhElEQVRoQ+2ZTVIbRxTH/28SUGIt4pwg5ASBbRgKcYLYm3i0Mj4BYiFVdpG3kqsiTgCsJGcDPoFFMdhLxAkinyB4QRILe17qjbrFaDya6Wl9JFSpVwiNet7vffW/uwlzHi9r/lNmlEAoAVgLX8foAeiB6dR7sflqFibQLCZJmuNl7c0jRvDbyPjJL+oTnP0njR9Pp7FlLiCdqn8Iwm7ofMY7IrQcpu7PzU2JBH6vXqwHxCVmVIjwnQJoeQ133xZm5iCd6kULxHvKoH2v4bbSjOvU/AoAiRzAdOA1N+Vz7pEJ0v7l7RoFn/YwzPN1leNdEHoO07H2svxfpdOJ/O0wbUS/S7NMRehSniE4j23SLBWkU/PFU1keahUGxeePWxvXnZr/h6qJzEjEwSKR6XsN9/u8IZkI0qn6l3cRoAMHOBrLcWD3LoX4lPDFMSM4kZooN91hd8o52lW/LzVjE5VEkEiev3eYSpNSRKVEF8A3YL4G0UMAuaOheXVUGDguN9ywWZiOz0BUTUiKGOV5NL9NfzPJuNFcjJ7XdDdMIYa1FRujaOToIO2af0TAU5nKa7iZDSTNwE7NZ5t5EkCGtWHbdf4/IJYe0Z7M44B4ZHRqMfNZubklksZ4fB6RKUFmUexgvPKa7iNjiqQaaVfPu0S0ncezsYK3WgfEaL0OccA75Rdb0g2Nx8yLXb05dwsetV7LdWim7ZeZnhHxYd42HI2oTTQS228YYi38mK8dODupCyKC1+FCqNr1mGhkrnjNrYPUdls93wNRKCwZ/Lzc2Kob51PkwTSJcgrCT+pZkeEjgRh6ELynpXq8OGMKuA/mlgPnbFziBNsgEh0XyplpICZGRIO2a+d1Av1q46E8v8mbTrLrfNJwj6PvSF2FTyqXDz+s3Lweicc81uV5ltEr3BZ3REGn/SzcNgOSemvxhTddxisFLIrWIaeyOvi6m/UyU/vFSYPVv0sBB61wl5iir6IAen5jkGg7/Oq2uD4rgDioAP2zctMTGOl65ebmkX4mDqC2zeHW2BhEL4w2ewPTqNwZHB5UnGhpkgQAUF0gJ4nKyV1LSZXCoPjtvKKhQcJaXL35U33ujzoZ450G0M9ag0yrZk2jow0MW3ECwL0DiddJ3BH3JiJZGbAEyfKQaQ1kPWe6xV1GZBmRrFyKfb9MLeWQzJV9mVqWqUXAbnyvEZ3q3nQtrbcIqCcBWYMsWjRGpTqAfhzIBkSuyX74L2R8u3qxC3A9ci03ArIB0Vdi/cKguDEvKa8kvNxWySHE2HlYEpCW+MYbK8nVTs0PoyIhRkCVwscHZ7MCCgG+/GsbDstRkEBceQ13eLUXGwlA5jtEmUt5S44uBWae46owKJaynBQFyhURbblMQMSSarMGumKmVnSfbuItsSf+m6kuZaLHRUnXZcoBh3Itl3ZiaWJ81jPWIJMgQuPB217TfSYvXxSMFUgqhDrEBuNokTC5QQwg3oddTuppgTC5QEwg5Dp75fZB/8PqzbDbLQjGGMQUQp+4j7XuBcAYgeSFiB28LSQymSC2EIuG+Re1mttgb/CAGAAAAABJRU5ErkJggg==" width="50" height="50">
-        <a class=HP-article-links-go href="#"> <h4> Summer Outdoor Movies </h4> </a>
-      </span>
-    </article>
-  </section>
+<table class="article-table" align="center">
+  <tr>
+
+  <th colspan="2"> <h2> <font color= "#5A6AD3"> Dine </font> </h2></th>
+  <th colspan="2"> <h2> <font color= "#A876C4"> Go </font> </h2></th>
+
+
+</tr>
+
+<tr>
+  <td class="hp-links" colspan="2"><p> <h3> New findings from Chicago's foodie culture </h3> </p></td>
+  <td  colspan="2"><p> <h3> Current Chicago Buzzworthy Spots </h3> </p></td>
+</tr>
+
+  <tr>
+    <td class="image-cells"> <img class="dine-icon" src="data:image/png;base64,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" width="50" height="50">
+    </td>
+    <td class="hp-links"> <a class=HP-article-links href="#"> <h4> Ann Sather Is A Standing Classic </h4> </a>  <br> <h4> Description for restaurant </h4></td>
+    <td class="image-cells"> <img class="dine-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAET0lEQVRoQ+2ZTW7bVhDH/0O3cQAHqG9Q+wSRl41pRDlBlU1CraqeIAlQEt3F3hVkgSgnqLqSkk3UE1iGqHRp5wRRThAbSIDWhTnFsKL8SJHiI2WJrpG3k/A+5jfzZt7MkHBDBt0QDnwBuW6WzLVIz/FfAGgA2KpI+DGBOo/d3YN5588F6dmjNoifVAQQO5bBB013bz9LlhyQ4UcQbRpMO4+83ZMqgF7bo1pAfAxgbLnmdjkQx2dZeE1AYLlmpuLnWuSV87bBCN5UYYnkmQTj4WP3Xr+URRSzVs6SdysyLfLm6fHm319/ei8+wsxHTW+vXgVNz/b7IHwP5tP1f+5sP2zvnKbJkQnSs/1DEET4d+vnG/WsDZYNFyr01ucBgLtgDCzPfKAN0nP8pwDk/TgzmOpVRaxI4O7Pf25RcCFR8xsAzyzXbM/6UOKf+JWiH5vebmfZWtfZf6rcjCs2c7W6znCfQM+Z8aHpmVW95qlsPccXq9xNexxjIDFrBPyg+eue3M2Vjdf22/tMXGdmUeAWKEyLLpXJfCrBJ83xYyCKbwCMjgF6uUz/UASvTwJLEaXFfCUOYvvHINQSSc4JwB0DxtGiUCJ4gIsaQI0SgschGSeWZ+5Ef05BJpHhfY5KxmCMiWgA8JjYGMv8R969I3WdCCy/A+ZNGFwHo7aw4CmCsbG23fzlu1CGSxB71CLi34rY9qrmRs4bBRrdfdW0ZQpSZcquJoO9SaKqBcP00vJ25c1TLTIcEFF4JVY9CLQvhdMrZ/ScwZk1R1IuNXW6tIjji39cq3dDQ6HTGkUFCWuPVY2yfpGUL7qWlYGU9osESeUgZf1CxyKS50t2+X8aZ5Zrbi4UteSOE0hC35XASwUYPqL/NRq0RnrUiioxrS0kFeODNTb6AbEklirMGZg6zEE/SjolGf3rq081IqPB4AYRvk0eUwYEjD8sz5Sem/KOTNJ3TQ5E2uj+NKyTQYeyTuBun99p51WTXXvUAng/DUj3/Oi8qNd1maIoAmluNo3hklqIdbKSyrBsBqCWqaGVbn1uE/CD5nkz01gpNaYgk9r4Y5FN5/WZ1H269jCsa5INjDJnKvuerZ9vbEXWj6XxXcfvFNGQLkiWcoomieo+DPzedM1W9F8MpEhDTi2FRSAEGBSpKCfN8TDhKzOSDbvZmt32xzpOmObsANrr5xsH85w9DA5EL2YKuAI0af2EFBC9umQafhEchnV0NKSuBvUNGJ2LNfoghY8UbUZwcZ8ZrasosJhnuzupDbquhlXCB5HxJAZRQKsLTH1nuWa8HFffkViUKR6KF5Cr2NKsHnBmy3SRiFJMNP3Z8z72zP/QM2mI6R+1vJl5jfS5ILEG8vJk1Nk5t5Ge+zH0GsDkQogmckFkUoUwWhDaIJHtV9oyUlo9OndPyyLJ0Ayijs7rryNAco682mBuFUl3ClukjGCrWlPYIqsSrOg5X0CKamzZ82+MRf4FXkc7UZIxSfwAAAAASUVORK5CYII=" width="50" height="50">
+     </td>
+    <td> <a class=HP-article-links-go href="#"> <h4> Family Weekend at Shedd Aquariam </h4> </a> <br> <h4> Description for restaurant </h4></td>
+
+  </tr>
+
+
+  <tr>
+    <td class="image-cells">   <img class="dine-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAD50lEQVRoQ+1az1LaYBDfjUqnHR3tExSPnRaKT1B8AulNuKg3yUV4AvUJTC/Bm3gJ3qRPUPoEpdBOj+oTSEdLp3XMdpYkGCR/voSEIZ1+J2fY7O5vd7/994nwjxyMGsfmbjePCHuIUGDeRNBChFY/tfi+qaz2opZn8YsUSEnunADgtrOy1AOYW9fUV+04wIQGUqhcrDz9fbMPAAVETIspRz1dX1g7O355KUYvThUKSEn+lgO4/wiAK+KiDEoiaBLNV6MGEwpIsdy5EPeCS6ARXSJiXVMzh0GN4UQvBIQ9QHS/TLRwJUl3eQA8iUK46aO6pmZ3+G9LTqOW/RSUvyeQktzdB6BKmBAKogiHGyKxgWyhSvV+aqkqmulcgXhnoCBqTkIrnukcgZTkzna04TMJGGhrambNj4MjkCgus5/gIL8T0btGLdv0+sbFI10KImgKtIeamjkIBKRY7nCBO5+CckFEiAPhSv3sz82Re4sRRG60tERYbdReK0IeKcndzwCQi1aFaLgRkfLrydKhVyoe3JEZy1Iu6L1T8QBIsdzlVvttNPaLk4t702kCmbx3ilN9O28iOm3UsmOjguWRNiK8mZYyk8nhEENF1+dP7R205ZE6Im5NJmDaX4/eGfOy83yhc9ZK2KFeP7W0ytlsWNmL5a8VRDpKGBKw7sxIi2JWdS48LxIEaNBUunW/TQDcSAoYTc2gG5DruIepqIxEBF8atUxuDMiMNo2uuMfuiLHeuT1HhHxU1oqbDxH9IFrIcT0ZeMTofG8/zmrT6GQQBoE4l7cWfmYd6fLQwsu2RBy+F0TzBYfKnpSm0bLzeCdseWTWRluByKAPmpodLMr5JBgIANePR0A6iSqAlvK6Dutnx5nW0CP8piFJwFkrUaefWnxujb8PTaPcVRBgL0FIrjQ1M3zOmLmmkVMrAKURcdnbqLSjqdn6yB15/AFvxXVdX0Gkpj9Dfx8axWtcMW4viLAuSZDXdWhJktTjAmdu5Vtusp3GXb9tfNBCeUWECqLO46jpdqnJyhlvi8Q75TQi1wFo2i362Bybu9/TiHcH9smVvYVIitN3vu8jxXLHdQy2LMMWjOttkAEyKL8XLl8gBiPOalQhgjy728syTG+8qxiHiJd+xIs/XkIPF9FhHnO8glgIiP8tGKUoyf5LcHsxC8rfif4/EDcrmiPBtZ+VZ94johOmvSr7gRb5PbLQMibMnxuIuiIy74u8QokA8CyIIgzMTLZFxPViUIkF//thmM+41hwQUTuKDBbKI6LhI2KQBxrqEUG9UctWg31nUIcCUpLjG43DhlwoIPF4xLCsfcYI4plQQIIImBbtX7n/zkKjHpJ/AAAAAElFTkSuQmCC" width="50" height="50">
+    </td>
+    <td class="hp-links"> <a class=HP-article-links href="#"> <h4> North Pond Provides A+ Setting for Dinner </h4> </a> <br> <h4> Description for restaurant </h4></td>
+    <td class="image-cells">   <img class="dine-icon"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAE5UlEQVRoQ+1azXIaRxDuXmKkilQV+QmCn8D4GNdSVp4g0iWGU/ATGFUZKjfhWwpSpc0TgE7Cvlh+AqMSco6Wn8DkDaQqO3EgbKdmdmYYhv3fRUUc7Q3tbE9/091f/4wQvpAHvxAccAtk3SypLDJojt4AQgnBOnjceXiah6IvWm/3CNwjJgsB2o879nEeck+ene+ihT0Auqx2KvtCvid60BqR2oRgSETPa79Whmk25hshHgLCrvH9OAugk59/L6H7zxEA7km51Y7NjTG3yBzINQB84y2kU7K+Oqj98t04DiCfja6JsCFktRHhWyEnMaAXrYtDIrcBiDsAoHQMBLIx2br7ufixgcAV8AAR9DemWwf7zoMrP0CvGu92/r7z6QgQ6uL9NQE5m5NtR//mpHlRB6BEgOZuBCWhy2sqFBrozj6w34FA5Aum3OfiJwcBfvIE0BWi5RQnX/8mlWNrJsU/n2onBQRwvDnZagSBZqLiADKtSwR/AFFdursMhUgg8uS5wNnMAYQf5oA8dyEiR5iaWY2fVFw3DAMEgCXdjZh1a51KW/eGxEAUoGfnu4DQRsRHukAiOgOCdlpiCAAkwir4cFIDkcozSnXJddhvC61GXlStAxKWV27kF5eZgcRhr5tYcwvkJk45yR6ZLMLodnrnr/suzMqAWAKCMgCVq93KXcH3b6QykhaTKJdkbWIgjPMRqRe0CcsbtY5dF7WaKkmCgLxsvn3kEu2gBWUiYkmuxA6D0zjBJQCwpDtGxDGRe2VBgf0Nfuw+PEtNv1EgRKbtV7v2k5Pm+VBQ8zWCVdfZjGf+4seeXiMlOX1WkpgyE1lkoZAM25mgT0THiNjYmG7V9azOK2Ca9VTiTIiAJVpTJhORCIhKhs3RWCv4llSR7hXG90n1l+vJKtzzqxbSAWmN+qrmMjQKA6GdHHcNAvdVCkAH1Y7NE3DqGJlbxD/go0BwIM3RKa9WZzPWn8jqOD4egstq136QDxDe0HhlszK5YKsojV42L8ouUA+QUXXyJ+iwUrkW295ksDh5gn/DWl2vGUr8xIm92GW8vrsOJgoItwTSuwXtRQsNaJW03MTjx6WZ6CStPnvHqupat2K2ykpcaov4xMsYCIaIMHStwpnJLIPmhQNIT/3MgGDt86QItCeplVUGbC1rB3jjRe44rDXIDsSbYKhSRAsanhjl70FrxGLKa0/Nh+hqY7p9L6yLjPLDzEDMUsRwHQVGjIL680HGEppTOcqJUtrvfWYgYWWL6ddiKNFXbbKhUVSchQHMDMSPwRQlu/S9n18PWiNWCIoR01y9KCByPkaFwpOlGBTjq1SspZ+QqVwYVWoF5TykQljJZ8C3lN1zsYhnFVXtAhvV1Lq2f2Czta3zNgIe6gdBAdZja5aKVZ/snh8QXTmC19WurcaYpm+LwFd1Vtwcocl5X+3YC5VBbkB05QjouTl3WkikRokTZo2ABLxC19KUi6OYZLsoa5jW5MmxYA1XFuw8TsTQbnO6vRcnucXJ2HFzSm6uFXfDVa37/wBhBV1eY9AV31jxes8vIbKxy33uCv+dGytFywu3uoJZWH+89jdW5lXD0vW0d8Gz/jdWJh0H3rOv+42VyYaR/zCwrjdWiYHID2TyW5cbq9RA5IfrcmOVGciqMnVWuZExknWDm/r+FshNnXTcff4FBS1Db5Njn4wAAAAASUVORK5CYII=" width="50" height="50">
+    </td>
+    <td><a class=HP-article-links-go href="#"> <h4> World War II Exhibit Now! </h4> </a> <br> <h4> Description for restaurant </h4></td>
+
+  </tr>
+
+
+  <tr>
+    <td class="image-cells"> <img class="dine-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEE0lEQVRoQ+2ZTVIaQRSA3xt/YlJa4QbBZSqBcAPJCSQ7mY24k8lCcwLNCUI24E7dgLvgCcQTiBArS80NTEmIMbFfqqdBhmGGmZ7pxpRlr7R43f2+16/fTw/CAxn4QDjgEUTHSa6sf0si3i4BUA4RkgCQEfvQJRE2EaHenZ3fr5cWL937/xcnsrLeziLCBiLkgg3EoWCtVknXnbITAzHft5aJQRYAe1YWaiBCYmD5YIy+BGPw9mAn1ej/rx3EtM4yRLdfEJG7isJBh9Vy+u4EtYJwnzeMPycAyK2ufFTLqTv9tYLkrXYJATaUE/QWnBiIabUKjOEF3/d6br45d92x74dhQJYIeGR6ExWSCE5rldTdfdN6IkFK9qJVKQoQERzXKqms8sueL7aWEO2INLgPSM3uzMKxV9x3QppWqw6Ay0Hgzt+J8EOt8rqkDMS02ltEVAiISk0AqAMYh9XyK/730BBB4e+5DAhj04sHOy9tt7XDuMxkt6xptXYBsCC3hp2lG4jQICIbCg1IAOFQghu3ptutYoGYVnsbALbkINRIE9E7ZZk9X2ydq09yoUC/V8upkeQaybX6Ps1DICA0EMAu4oh4CUIZRHweSqUIQu7SJNYd4WUHYyzhrHWGo9BZhoAVQAQBhVDDZYlzz0gnEtaQuc3zxNObzraK7E5EP349WUj6hfLQILZSv38uI5LwT6Qmu505dYZAP0CR+Kge53S8LrjUiQiAqy1E3PRRtElEDcSpfa8c0Z/DyxUA3A17mk45AvhcK6f89g/OIxzi2U3nKGy/QEQ8QdXRgIY7o+eLXzcR6ZMsiLum8ps/1rXyxfYRIo9E0YYA40UjJaOE6qB7Ecq1uF8bBvDTuJfBIRCnsuPcNRSI7l4i2Dq0Vi2n94LlhISva+WLbV4PLXHLAGCv0NOb7AZKy0GMBeG1FGPTe+7wKgLAFe+Vc7Kld0jrfqyWU7yOkxqh84jXqr2evKQKiIj2a5W0ZDU9xrV6tdQqEY847KJWSR+PM0+Uxsi9XhwIX9fKF1t7iLjq2qwJwPsHvOBZnZgoFEVXSNtxXkriQniCROnWpJzZJawCwhNkkmFXFYQ3yIQaJpUQIyC8zwBgJ3FcJcxc1RAjIFELuzDK92V0QHiAeEYrGT3HyuqC8AARZYkyzR0L6YTwuCNt0gEBIF87yeoxVKKYlg4Q/RBaT4RXzUSY83tpkbV4kLyWE+HtKaJRCNsUBSkZ5vchkH4PEmaivwwddmcXCkEv8PH2GJ09DBL/C1OkXkIF1BBI1D79PlzJDT/SWMm4l3ggwFKUjk7FKTjXGAERD3Idnhh9v+/1Abqz86VJ3wU/A3i2ur2HOf6yx9vOF4MHCPEA5/42odq6UdaL1bNH2VDXnEcQXZaNuu4/CQzsQqrBwwMAAAAASUVORK5CYII=" width="50" height="50">
+     </td>
+    <td class="hp-links"> <a class=HP-article-links href="#"> <h4> Your French Fix at Northside's MK </h4> </a> <br> <h4> Description for restaurant </h4></td>
+    <td class="image-cells"> <img class="dine-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEhElEQVRoQ+2ZTVIbRxTH/28SUGIt4pwg5ASBbRgKcYLYm3i0Mj4BYiFVdpG3kqsiTgCsJGcDPoFFMdhLxAkinyB4QRILe17qjbrFaDya6Wl9JFSpVwiNet7vffW/uwlzHi9r/lNmlEAoAVgLX8foAeiB6dR7sflqFibQLCZJmuNl7c0jRvDbyPjJL+oTnP0njR9Pp7FlLiCdqn8Iwm7ofMY7IrQcpu7PzU2JBH6vXqwHxCVmVIjwnQJoeQ133xZm5iCd6kULxHvKoH2v4bbSjOvU/AoAiRzAdOA1N+Vz7pEJ0v7l7RoFn/YwzPN1leNdEHoO07H2svxfpdOJ/O0wbUS/S7NMRehSniE4j23SLBWkU/PFU1keahUGxeePWxvXnZr/h6qJzEjEwSKR6XsN9/u8IZkI0qn6l3cRoAMHOBrLcWD3LoX4lPDFMSM4kZooN91hd8o52lW/LzVjE5VEkEiev3eYSpNSRKVEF8A3YL4G0UMAuaOheXVUGDguN9ywWZiOz0BUTUiKGOV5NL9NfzPJuNFcjJ7XdDdMIYa1FRujaOToIO2af0TAU5nKa7iZDSTNwE7NZ5t5EkCGtWHbdf4/IJYe0Z7M44B4ZHRqMfNZubklksZ4fB6RKUFmUexgvPKa7iNjiqQaaVfPu0S0ncezsYK3WgfEaL0OccA75Rdb0g2Nx8yLXb05dwsetV7LdWim7ZeZnhHxYd42HI2oTTQS228YYi38mK8dODupCyKC1+FCqNr1mGhkrnjNrYPUdls93wNRKCwZ/Lzc2Kob51PkwTSJcgrCT+pZkeEjgRh6ELynpXq8OGMKuA/mlgPnbFziBNsgEh0XyplpICZGRIO2a+d1Av1q46E8v8mbTrLrfNJwj6PvSF2FTyqXDz+s3Lweicc81uV5ltEr3BZ3REGn/SzcNgOSemvxhTddxisFLIrWIaeyOvi6m/UyU/vFSYPVv0sBB61wl5iir6IAen5jkGg7/Oq2uD4rgDioAP2zctMTGOl65ebmkX4mDqC2zeHW2BhEL4w2ewPTqNwZHB5UnGhpkgQAUF0gJ4nKyV1LSZXCoPjtvKKhQcJaXL35U33ujzoZ450G0M9ag0yrZk2jow0MW3ECwL0DiddJ3BH3JiJZGbAEyfKQaQ1kPWe6xV1GZBmRrFyKfb9MLeWQzJV9mVqWqUXAbnyvEZ3q3nQtrbcIqCcBWYMsWjRGpTqAfhzIBkSuyX74L2R8u3qxC3A9ci03ArIB0Vdi/cKguDEvKa8kvNxWySHE2HlYEpCW+MYbK8nVTs0PoyIhRkCVwscHZ7MCCgG+/GsbDstRkEBceQ13eLUXGwlA5jtEmUt5S44uBWae46owKJaynBQFyhURbblMQMSSarMGumKmVnSfbuItsSf+m6kuZaLHRUnXZcoBh3Itl3ZiaWJ81jPWIJMgQuPB217TfSYvXxSMFUgqhDrEBuNokTC5QQwg3oddTuppgTC5QEwg5Dp75fZB/8PqzbDbLQjGGMQUQp+4j7XuBcAYgeSFiB28LSQymSC2EIuG+Re1mttgb/CAGAAAAABJRU5ErkJggg==" width="50" height="50">
+    </td>
+    <td><a class=HP-article-links-go href="#"> <h4> Summer Outdoor Movies </h4> </a> <br> <h4> Description for restaurant </h4></td>
+
+  </tr>
+
+
+
+  </table>
 </div>
 
-
-<!--About column, brief overview of what the site is-->
-<div class="column">
-  <section class="About-posts">
-
-      <h2> <font color= "#000000"> About Unbeaten </font> </h2>
-      <p class="about-us"> Unbeaten is your destination to the real Chicago. Here at Unbeaten, we are committed to
-        providing you with the best Dine and Go destinations. With weekly updates, we curate Chicago's best
-        restaurants, museums, parks, and cultural hotspots, so you can discover the authentic gems of Chicago. </p>
-  </section>
+<!-- <div id="homepage-about">
+  <h2> This </h2>
+  <p> blah blah clakj;flkajdf;lkj <p>
 </div>
 
-</div>
+-->
+
+
 
 </body>
 
 <!--footer section: includes page links and contact/social media links-->
-<footer class="footer">
-  <table>
+<footer>
+
+<div id="footer">
+  <table class="footer-table">
     <tr>
       <th><h4>Site</h4></th>
       <th><h4>Contact</h4></th>
@@ -152,8 +164,7 @@ used for artistic appeal. -->
       <td> &nbsp;</td>
     </tr>
   </table>
-
-
+</div>
 
 </footer>
 
