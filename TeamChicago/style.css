@@ -1,0 +1,228 @@
+/* This is the primary CSS stylesheet. Created by Abby Powers */
+
+/* Heading styles */
+h1 {
+    display: inline-block;
+    font-size: 2.5em;
+    margin-top: 0.67em;
+    font-weight: bold;
+    color: black;
+    font-family: PT Sans;
+    text-align: center;
+}
+
+h2 {
+  font-size: 1.9em;
+  margin top: 0px;
+  font-family: PT Sans;
+  text-align: center;
+}
+
+
+h3{
+    display: inline-block;
+  font-size: 1.2em;
+  margin: 10px;
+  font-family: PT Sans;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h3.footer-header {
+  text-align: left;
+}
+
+h4{
+  font-size: .9em;
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6{
+  line-height: 25px;
+}
+
+.head-stars {
+list-style: none;
+margin-top: 3px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+padding:0px;
+text-align: center;
+font-family: PT Sans;
+}
+
+.head-stars li{
+    display:inline;
+    padding: 45px;
+  }
+
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0px;
+    text-align: center;
+    font-family: PT Sans;
+}
+
+.nav li{
+    display:inline;
+    padding: 10px;
+
+}
+
+.nav a{
+    display:inline-block;
+    padding:10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+.nav li a:hover {
+  color: #F70808;
+}
+
+.dine-icon{
+  margin-left: 10px;
+  margin-top: 2px;
+  margin-right: 0px;
+  margin-bottom: 3px;
+}
+
+.HP-article-links h4{
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding: 5px;
+  color: #000000;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+.HP-article-links h4:hover {
+  color: #5A6AD3;
+}
+
+.HP-article-links-go h4{
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding: 5px;
+  color: #000000;
+  font-size: 1.1em;
+  text-align: left;
+
+}
+
+.HP-article-links-go h4:hover {
+  color: #A876C4;
+}
+
+.sidebar-links a{
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  color: #000000;
+  font-size: 1.1em;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
+.sidebar-links h4:hover {
+    color: #F70808;
+}
+
+
+p.about-us{
+  margin-left: 3px;
+  margin-top: 3px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  padding: 10px;
+  color: #000000;
+  font-size: 1.3em;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+}
+
+.hp-links{
+  border-right: solid 2px #000000;
+
+}
+
+table.footer-table {
+    font-family: 'Lato', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th, tr {
+    text-align: left;
+    padding: 10px;
+}
+#footer{
+background-color: #E7E7E7;
+margin-top: 50px;
+width: 70%;
+
+}
+.footer-links a{
+  color: #000000;
+  text-decoration: none;
+  text-align: left;
+}
+
+.footer-links a:hover{
+    color: #F70808;
+}
+
+
+.mySlides {display:none;}
+
+
+#homepage-body{
+  width: 100%;
+    overflow: auto;
+}
+#homepage-table{
+  width: 70%;
+  float: left;
+}
+
+#homepage-about{
+  width: 30%;
+  margin-left: auto;
+  margin-right:0;
+}
+
+#homepage-slider{
+  margin-left: auto;
+  margin-right:20px;
+  margin-top: 10px;
+  width:74%;
+
+}
+
+#sidebar{
+  width: 14%;
+  border-style: double;
+  border-width: 12px;
+  float: left;
+  padding: 17px;
+  overflow-y: scroll
+}
+
+
+#homepage-body{
+  width: 100%;
+  overflow: auto;
+}
