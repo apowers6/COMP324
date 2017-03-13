@@ -21,7 +21,7 @@ h3{
   display: inline-block;
   font-size: 1.2em;
   font-family: PT Sans;
-  text-align: center;
+  text-align: left;
   font-weight: lighter;
 }
 
@@ -91,21 +91,42 @@ td img.about-icon{
 
 table.about-table{
   margin: 50px;
+  width: 90%;
 }
 
-div.sidebar {
-  display: table;
-  position: absolute;
-  height: 100%;
+
+
+
+
+
+  #footer{
+  background-color: #E7E7E7;
+  margin-top: 50px;
   width: 100%;
-}
+  overflow: auto;
+  height: 100%;
+  line-height: 25px;
 
-.footer-links a{
-  color: #000000;
-  text-decoration: none;
-  text-align: left;
-}
+  }
 
-.footer-links a:hover{
-    color: #F70808;
+  table.footer-table {
+      font-family: 'Lato', sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      padding: 20px;
+  }
+
+  .footer-links a{
+    color: #000000;
+    text-decoration: none;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .footer-links a:hover{
+      color: #F70808;
+  }
+
+#footer_table{
+  width: 60%;
 }
