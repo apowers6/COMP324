@@ -160,31 +160,7 @@ p.about-us{
 }
 
 
-table.footer-table {
-    font-family: 'Lato', sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
 
-td, th, tr {
-    text-align: left;
-    padding: 10px;
-}
-#footer{
-background-color: #E7E7E7;
-margin-top: 50px;
-width: 70%;
-
-}
-.footer-links a{
-  color: #000000;
-  text-decoration: none;
-  text-align: left;
-}
-
-.footer-links a:hover{
-    color: #F70808;
-}
 
 
 .mySlides {display:none;}
@@ -294,4 +270,43 @@ width: 70%;
   font-family: 'Open Sans', sans-serif;
   font-style: italic;
   text-decoration: none;
+}
+
+
+
+  #footer{
+  background-color: #E7E7E7;
+  margin-top: 50px;
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+  line-height: 10px;
+
+  }
+
+  table.footer-table {
+      font-family: 'Lato', sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      padding: 10
+  }
+
+  .footer-links a{
+    color: #000000;
+    text-decoration: none;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .footer-links a:hover{
+      color: #F70808;
+  }
+
+#footer_table{
+  width: 60%;
+}
+
+td, th, tr {
+    text-align: left;
+    padding: 10px;
 }

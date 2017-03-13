@@ -112,3 +112,36 @@ img.dine-images{
 .dine-links a:hover {
   color: #5A6AD3;
 }
+
+
+  #footer{
+  background-color: #E7E7E7;
+  margin-top: 50px;
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+  line-height: 25px;
+
+  }
+
+  table.footer-table {
+      font-family: 'Lato', sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      padding: 20px;
+  }
+
+  .footer-links a{
+    color: #000000;
+    text-decoration: none;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .footer-links a:hover{
+      color: #F70808;
+  }
+
+#footer_table{
+  width: 60%;
+}
