@@ -7,12 +7,12 @@ h1 {
     font-weight: bold;
     color: black;
     font-family: PT Sans;
-    text-align: cent  qer;
+    text-align: center;
 }
 
 h2 {
   font-size: 1.5em;
-  margin top: 0px;
+  margin-top: 0px;
   font-family: PT Sans;
   font-weight: lighter;
   text-align: center;

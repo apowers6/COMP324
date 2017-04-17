@@ -8,12 +8,11 @@ h1 {
     color: black;
     font-family: PT Sans;
     text-align: center;
-    padding: 10px;
 }
 
 h2 {
   font-size: 1.5em;
-  margin top: 0px;
+  margin-top: 0px;
   font-family: PT Sans;
   font-weight: lighter;
   text-align: center;
