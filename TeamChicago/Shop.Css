@@ -81,25 +81,68 @@ font-family: PT Sans;
   text-align: center;
 }
 
-img.images-Shops{
-  display: block;
-    margin: auto;
-    width: auto;
-    max-width: 500px;
-    height: auto;
-    max-height: 500px;
+table {
+    table-align: center;
 }
 
-a.Shops-links {
-  color: #000000;
-  text-decoration: none;
-  text-align: left;
+td.dine-links {
+    width: 600px;
+    padding-bottom: 50px;
 }
 
-a.Shops-links:hover{
+td.image-cells {
+    width: 200px;
+    height: 120px;
+    padding-bottom: 50px;
+}
+
+img.shops-images {
+    width: 200px;
+    height: 120px;
+}
+
+.dine-links a {
+    color: #000000;
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+}
+
+a.dine-links a:hover{
     color: #F70808;
 }
 
-h1, h2, h3, h4, h5, h6{
-  line-height: 25px;
+#footer {
+    background-color: #E7E7E7;
+    margin-top: 50px;
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+    line-height: 25px;
 }
+
+table.footer-table {
+    font-family: 'Lato', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+    text-align: left;
+    padding: 20px;
+}
+
+    .footer-links a:hover {
+        color: #F70808;
+    }
+
+#footer_table {
+    width: 60%;
+}
+
+/*h1, h2, h3, h4, h5, h6{
+  line-height: 25px;
+}*/
