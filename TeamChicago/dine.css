@@ -11,8 +11,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.9em;
-  margin-top: 0px;
+  font-size: 1.5em;
+  margin top: 0px;
   font-family: PT Sans;
   font-weight: lighter;
   text-align: center;
@@ -21,7 +21,7 @@ h2 {
 
 h3{
     display: inline-block;
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin: 10px;
   font-family: PT Sans;
   text-align: center;
@@ -37,6 +37,7 @@ h4{
   font-size: .9em;
   margin: 0px;
   font-family: 'Lato', sans-serif;
+  text-align: left;
   display: inline-block;
 }
 
