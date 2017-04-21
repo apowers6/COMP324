@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title></title>
 	<meta charset="utf-8" />
-  <link href="places.css" rel="stylesheet" />
+  <link href="../css/places.css" rel="stylesheet" />
+  <link href="../css/grid.css" rel="stylesheet" />
+
   <link href='//fonts.googleapis.com/css?family=Arya' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i" rel="stylesheet">
@@ -17,16 +20,13 @@
     <hr width="100%" color="#00000" size="4">
     <!--horizontal navigation with 4 links-->
     <ul class="nav">
-                  <li class="first active"> <a href="new home.html">Home</a> </li>
-                  <li> <a href="newDine.html">Dine</a> </li>
-                  <li> <a href="newGo.html">Go</a> </li>
-                  <li> <a href="shop.html">Shop</a> </li>
-                  <li> <a href="about.html">About</a> </li>
+                  <li class="first active"> <a href="../html/new home.html">Home</a> </li>
+                  <li> <a href="../html/newDine.html">Dine</a> </li>
+                  <li> <a href="../html/newGo.html">Go</a> </li>
+                  <li> <a href="../html/shop.html">Shop</a> </li>
+                  <li> <a href="../html/about.html">About</a> </li>
     </ul>
-
-
 </head>
-
 
 <body>
   <header id="dineheader">
@@ -36,23 +36,53 @@
 
 
   <article>
-    <img class="images-places" src=" images/Ditka's Chicago.jpg"width="200"height="100">
-
+    <img class="images-places" src="../images/Ditka's Chicago.jpg"width="200"height="100">
+    <div class="col-12">
       <header >
           <h1> Mike Ditka's</h1>
       </header>
+</div>
 
-        <p> <h4> Description for Ann Sather's (menu items, locations, famous dishes, etc)
-</h4> </p>
-<br>
-<p><h4> 100 E Chestnut St.<br />
-  312-587-8989<br />
-  Mon-Thur: 11am-10pm<br />
-  Fri & Sat: 11am-11pm<br />
-  Sun: 10am-10pm<br /></h4> </p><br>
+<div class="col-6">
+        <p> <h4>Ditka's Restaurant, located in the heart of Chicago's Gold Coast between Rush & Michigan,
+          is a Chicago Landmark. Ditka's has a decidedly understated sports motif, white linen table clothes,
+          hardwood floors, intimate leather booths & rich mahogany wood accents.Chef Tom Kenny presides over the
+          menu with passion & expertise. Known for Chops & Steaks including the signature dish "Da Pork Chop"
+          along with a wide variety of fresh, sustainable seafood and contemporary American classics. The lunch
+          menu is full of wonderful fresh salads & sandwiches including the "Best Burger in Chicago", the Fridge Burger.
+          Service is approachable & friendly in a comfortable atmosphere. Don't be surprised to catch sight of Da Coach
+          himself.</h4> </p>
+          <br>
+          <p><h4> 100 E Chestnut St.<br />
+            312-587-8989<br />
+            Mon-Thur: 11am-10pm<br />
+            Fri & Sat: 11am-11pm<br />
+            Sun: 10am-10pm<br /></h4> </p><br>
 
           <a class="places-links" href=https://www.ditkasrestaurants.com/><h3>www.ditkasrestaurants.com</h3></a>
-
+</div>
   </article>
-</body>
-</html>
+
+  <div class="col-6">
+  <div id="map">
+    <script>
+        function initMap() {
+          var uluru = {lat: 41.898673, lng: -87.624995};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgpfnTFtCelhTbYBNE1mxauIjGHiEt03U&callback=initMap">
+      </script>
+  </div>
+  </div>
+
+  </body>
+  </html>
