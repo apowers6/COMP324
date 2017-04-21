@@ -11,8 +11,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.9em;
-  margin-top: 0px;
+  font-size: 1.5em;
+  margin top: 0px;
   font-family: PT Sans;
   font-weight: lighter;
   text-align: center;
@@ -21,17 +21,21 @@ h2 {
 
 h3{
     display: inline-block;
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin: 10px;
   font-family: PT Sans;
   text-align: center;
   font-weight: lighter;
 }
 
+h3.footer-header {
+  text-align: left;
+
+}
+
 h4{
-  font-size: 1em;
+  font-size: .9em;
   margin: 0px;
-  padding: 10px;
   font-family: 'Lato', sans-serif;
   text-align: left;
   display: inline-block;
@@ -80,68 +84,64 @@ font-family: PT Sans;
   text-align: center;
 }
 
-table {
-    table-align: center;
+table{
+  table-align: center;
 }
 
-td.dine-links {
-    width: 600px;
-    padding-bottom: 50px;
+td.dine-links{
+  width: 600px;
+  padding-bottom: 50px;
 }
 
-td.image-cells {
-    width: 200px;
-    height: 120px;
-    padding-bottom: 50px;
+td.image-cells{
+  width: 120px;
+  padding-bottom: 50px;
+}
+img.dine-images{
+  width: 200px;
+  height:120px;
 }
 
-img.shops-images {
-    width: 200px;
-    height: 120px;
+.dine-links a{
+  color: #000000;
+  text-decoration: none;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
 }
 
-.dine-links a {
-    color: #000000;
-    text-decoration: none;
-    text-align: left;
-    font-family: 'Lato', sans-serif;
+.dine-links a:hover {
+  color: #5A6AD3;
 }
 
-a.dine-links a:hover{
-    color: #F70808;
-}
 
-#footer {
-    background-color: #E7E7E7;
-    margin-top: 50px;
-    width: 100%;
-    overflow: auto;
-    height: 100%;
-    line-height: 25px;
-}
-
-table.footer-table {
-    font-family: 'Lato', sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    padding: 20px;
-}
-
-.footer-links a {
-    color: #000000;
-    text-decoration: none;
-    text-align: left;
-    padding: 20px;
-}
-
-    .footer-links a:hover {
-        color: #F70808;
-    }
-
-#footer_table {
-    width: 60%;
-}
-
-h1, h2, h3, h4, h5, h6{
+  #footer{
+  background-color: #E7E7E7;
+  margin-top: 50px;
+  width: 100%;
+  overflow: auto;
+  height: 100%;
   line-height: 25px;
+
+  }
+
+  table.footer-table {
+      font-family: 'Lato', sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      padding: 20px;
+  }
+
+  .footer-links a{
+    color: #000000;
+    text-decoration: none;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .footer-links a:hover{
+      color: #F70808;
+  }
+
+#footer_table{
+  width: 60%;
 }
