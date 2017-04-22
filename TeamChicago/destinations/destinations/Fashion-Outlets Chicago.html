@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+  <link href="../css/places.css" rel="stylesheet" />
+  <link href="../css/grid.css" rel="stylesheet" />
+
+  <link href='//fonts.googleapis.com/css?family=Arya' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i" rel="stylesheet">
+    <ul class="head-stars">
+    							<li> <span style="font-size:300%;color:#F70808; margin: 0px;">&bigstar;</span> </li>
+                  <li> <span style="font-size:300%;color:#F70808; margin: 0px;">&bigstar;</span> </li>
+                  <li> <h1> Unbeaten </h1> </li>
+                  <li> <span style="font-size:300%;color:#F70808; margin: 0px;">&bigstar;</span> </li>
+                  <li> <span style="font-size:300%;color:#F70808; margin: 0px;">&bigstar;</span> </li>
+    </ul>
+    <hr width="100%" color="#00000" size="4">
+    <!--horizontal navigation with 4 links-->
+    <ul class="nav">
+                  <li class="first active"> <a href="../html/new home.html">Home</a> </li>
+                  <li> <a href="../html/newDine.html">Dine</a> </li>
+                  <li> <a href="../html/newGo.html">Go</a> </li>
+                  <li> <a href="../html/shop.html">Shop</a> </li>
+                  <li> <a href="../html/about.html">About</a> </li>
+    </ul>
+
+</head>
+  <body>
+    <header id="dineheader">
+      <!--This is the header of the page in center-->
+      <h1 id="Shophead1">Shop </h1>
+    </header>
+
+    <article>
+      <img class="images-places" src="../images/Fashion-Outlets.jpg"width="200"height="100">
+      <div class="col-12">
+        <header id="Fashion-Outlets Chicago">
+            <!--This is the header of the page in center-->
+            <h1 id=" Fashion-Outlets Chicago head1"> Fashion Outlets</h1>
+        </header>
+</div>
+<div class="col-6">
+          <p> <h4> Fashion Outlets of Chicago is an enclosed Outlet store located
+            at Balmoral Avenue and I-294, one-half mile east of O'Hare International
+            Airport, in Rosemont, Illinois. It opened on August 1, 2013 taking
+            about $250 million to develop. The outlet mall contains about 150+
+            stores that ranges from high end stores to stores that would be in
+            normal, casual malls. The mall is made as an easy access for travelers
+            since it is located near O’hare International Airport. The Fashion
+            Outlets of Chicago makes it a priority to accommodate travelers to
+            be able to shop at the mall by providing them with an area to print
+            tickets and check in their luggage directly to O’hare Airport.</h4> </p>
+</b> <br>
+    <p> <h4>
+      Address: 5220 Fashion Outlets Way, Rosemont, IL 60018<br>
+      Hours: <br>
+      Monday	10AM–9PM<br>
+      Tuesday	10AM–9PM<br>
+      Wednesday	10AM–9PM<br>
+      Thursday	10AM–9PM<br>
+      Friday	10AM–9PM <br>
+      Saturday	10AM–9PM<br>
+      Sunday	10AM–7PM<br>
+
+      Phone: (847) 928-7500<br>
+   </h4></p><br>
+
+            <a class="places-links" href="http://www.fashionoutletsofchicago.com"> <h3>www.fashionoutletsofchicago</h3></a>
+</div>
+    </article>
+
+    <div class="col-6">
+    <div id="map">
+      <script>
+          function initMap() {
+            var uluru = {lat: 41.974998, lng: -87.866878};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgpfnTFtCelhTbYBNE1mxauIjGHiEt03U&callback=initMap">
+        </script>
+    </div>
+    </div>
+
+    </body>
+
+    </html>
