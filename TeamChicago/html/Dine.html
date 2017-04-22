@@ -4,6 +4,7 @@
     <title></title>
 	<meta charset="utf-8" />
     <link href="../css/dine.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/grid.css">
     <a href="https://icons8.com"> </a>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='//fonts.googleapis.com/css?family=Arya' rel='stylesheet'>
@@ -85,41 +86,39 @@
 
 </body>
 
+
 <footer>
-
-<div id="footer">
-  <div id="footer_table">
-  <table class="footer-table">
-    <tr>
-      <th><h3>Site</h3></th>
-      <th><h3>Contact</h3></th>
-      <th>&nbsp;</th>
-    </tr>
-    <tr>
-      <td class="footer-links"><h4><a href="dine.html">Dine</a></h4></td>
-      <td class="footer-links"><h4><a href="#">Email Us</a></h4></td>
-      <td class="footer-links"><h4><a href="#">Twitter</a></h4></td>
-
-    </tr>
-    <tr>
-      <td class="footer-links"><h4><a href="go.html">Go</a></h4></td>
-      <td class="footer-links"><h4><a href="#">Subscribe!</a></h4></td>
-      <td class="footer-links"><h4><a href="#">Instagram</a></h4></td>
-
-    </tr>
-    <tr>
-      <td class="footer-links"><h4><a href="about.html">About</a></h4></td>
-      <td class="footer-links"><h4><a href="#">Facebook</a></h4></td>
-      <td> Copyright &copy Unbeaten 2017</td>
-    </tr>
+  <div class="row">
+    <div class="col-4">
+      <h2 class="FooterTitle">Site</h2>
+      <a class="FooterLinks" href="../html/newDine.html"><h4>Dine</h4></a>
+      <a class="FooterLinks" href="../html/newGo.html"><h4>Go</h4></a>
+      <a class="FooterLinks" href="../html/shop.html"><h4>Shop</h4></a>
+      <a class="FooterLinks" href="../html/about.html"><h4>About Unbeaten</h4></a>
+    </div>
+    <div class="col-4">
+      <h2 class="FooterTitle">Contact</h2>
+      <img class="ContactIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACHklEQVR4Xu2ai03DMBCG/38C2AC6ARsAE8AIsEE3ACZgBGACYAOYgHYC2gmACQ6dFFCaR+0kjZqzz1LVSkmdu8/38sVE5oOZ6w8H4BaQOQF3gcwNwIOgu4C7QAcCInIM4B7ACQD9PaWxArAAcE3yO1awaBcQkUMAnwD0e8pDlZ/FQugC4AXAxZQ1L8n2SvIyRtYuAL4MrP6fziuSs10DkPKEJKPhxQgy9B4R6SVftBJ9HzBUsdj/95XPAYxNOHb+ofclZQEiclZkHK039FNOvW8AliTnZWhJAChqjQcAoRT2TlIh/Y9UAHwUKx7yiPQAiMgtgJuQ5sX1tAD0KLOTA6A+/7xl9ZcAyhucRVJBMGD+5yQ18m8dpoPgFgA1U2+jkCqA6F1dqgCytwAHUK34zMcAEbkCcFRRRMvajdK2uK59vscGpdUyNjKDmRggIir4aSitBa7fkdTK0d5eYEcAarVBbhaQN4CmfmRWFmAdgGaB6lslzQBNgXHdkAW05V3LDGYsoCm6+16gvRnilWBylaC7QAMBjwEeA1o7wh4EPQhW3gCZ7wd4FvAsUCfgadBIGtT+XLWXN7CzNdrf1ySjzjF2OSJj6ZjcE0nddgdHFwB6SkOt4CA4635v+NF+w84PSqpOxWtsbUbosZWpuYM2T7TjPI9VXnWKtoD9Lup4T3cA47G1MbNbgI11Gk9Kt4Dx2NqY2S3AxjqNJ2X2FvALa3DzUGIQmu0AAAAASUVORK5CYII=" width="30" height="30">
+      <a class="FooterLinks" href="Dine.html"><h4>Facebook</h4></a>
+      <img class="ContactIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADvUlEQVR4Xu1a7XEUMQyVKiBUAKkAqAA6ACogqQA6IB2QVEDSAVRAUgFJBZAOkgrEPEZmPGZ3LXnlZG/Onrlf69VKT08flo9pzxfvuf00ABgM2HMERgjsOQFGEhwhMEJgzxEYIbBVAojIARG9IKI3quNvIrph5utInTfHABGBwZ8zw0t7AcQ5EZ0x890UGCrjgJm/1cByASAiR8yMj4cv9fgXIjoyCgcQ73NGiMhbIvqk4B0yM/YsLjMAiuoPIjqOBkGNh+yXNYWL52AAHPKciN5lz8AOAFFdHgDwoQ8qMRQEEfnq8HzNqBswYC48ypc9APwsPBQCQsasmmGW53+N140IB66x1QOATGhwzszHFs3m9ojIL6XwGjF4N4UDwgggmJiwFgB8GGUJbHCXJxFB7AKA6HUPtkYnQRiIujy1gP7pUmmaeklEkKiQ+SPXLRKi1SEeBqCmIq6WFsrOCTNfWCwSkROt+Zbtlj0m2ueCPACgPiNbW1a1WYGQDgA8tWb/ZIQHALSmMOyJBYFsD0IHJfSqpGU0AEj5Tt18A5GgmL1UIAEmsnUqW17d/9vfHQClrSUXrDamRUBXAEQE2fpM6y0yfuoKW3Tt8c49MyNMXcscMyKSGiHENMoeGg73B13a+TYjx7jDyQPAUh/gU7XP7gtmtp4k/2ngAQC0/9hH9xCpTWcTDwC92tYQ64nolbX7a2qEtAJslQW3zAwHuZeZAQoAkh7q+NyZwK1A0AvmAUj5PRcAGwahif6wxw1ABgIOMltIipgUe0dp/iowRVU9zwMI1N9nQXT2imnK/ukjrQzAADL3/mM1Rc3Jby0AyLhojLwnQ693a/sxFq/O/peENDFA80D0MKNmbPm8qfVdXQVyASKCkvjaq3nAfvPMr/atZgZk1QDDjtqorKaH9/mqxJd/bBUASZAOShASD5ETmg49cwiHAJCxAaexNOXpAcaqmj8FQhgARW4ACBigNvXnM95yT3wtcRUKgF5ywvD8otKiR23Plc76J6/Day93KYOFx+Fp3Om7BxIG5UNjPqwMigjKHzwNujf34gsAoNTh/wirGp0awNUQ0NtbeBa9PjwdGddz+n1X48Mp38wAvcTAXV6P7J70Qqzjag0N1oOsKgNKLfA3GY31qA4QVAfNT1tGWmtRcgOQNT/pbynpPt5zHEZJg5cve8d4DaBmACaYgXFZSobl8RjXYPjdPYaXu5fBGspbfh7GgC0bORiwgMBgwK5SN0rvwYAoJHdVzmDArnouSu/BgCgkd1XO3jPgD29nKFBdQiUqAAAAAElFTkSuQmCC" width="30" height="30">
+      <a class="FooterLinks" href="Go.html"><h4>Twitter</h4></a>
+      <img class="ContactIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAC6klEQVR4Xu1a7XHVMBDcrQCoAFIBpAJCBUAFhAoIlRAqgFQAVECogKQCUgJUcMzO2DNC8cfJsXjnWPr1Zp4s6/b2Tns6Ezsf3Ln9aAA0BuwcgRYCOydAS4ItBFoILEDAzN4AOAPwbMHjNR65AnBO8qJ08aIQMLOHAL4HMjy3V0C8IPnbC0QpAD8DG9/bfEXyeHUAzOwUwCfvwgee95bkZ88e3Awwsy14v5gFJQCYB9Eoc0i6bHNNklFmdlAAxgwa21cDoDGghYArvF2TWg5oSfDwp0Dp8XrvToH7BMA1AMnUS5IqXqQxVFWeAJDcflpq7ND8qAx4T/J8ykAzU5n94a4gRATguPf4nHEdI1R7LB7RAJj1fG7pXZlQHYAJbZ5T+JrkopsjM7sB8DgBZxTIvCY4JABfAbz0bHqO3wMs+Eby1dBzkQD4BeBJskl37A+EgZiT5oIbkkfRAfinbPZScYwNXs965+XvWVwLeOvzPQIgcZOKmTVDYDShRmLA7pNgfgwWXVOnMWpmeUIdve2NxACdANp4OtYSQkckpQ1ujTAAdMWNih21z9LhzgUjUviCpIqlwRENALXQ5KkH2W7PSH6cEkBm9k59vmzOH2mLqZZXKAA6FkixfRkwVsDIwB9ZOfy8a7imIqp//DVJJdfREQ6ADoQ12mmuNldIABImKCfk4TDlUP0n2p/Oeb5fJCwAHQjKCaJ9nhjHQFCfX/nC3eYODUDiJcW3coOuv/S7V4y6JlNuUJzrqmzwqNtcDpjj+Jr/b4IBaxqcr9UAyLrX3ip09XK4ppdD5QAAj0qydE1gzOxW/VGDAXmdfwlACs19VNUAoftyTYpTJ0s/3BexJSGwhqqrgcHQmi71qAfdAHSCJmfB/zKo5D1u7y8BQIpO1F+lf1dilXOuBNVJSVgWMSBRdAoH3fxEAUKG61NZ17eBKZiLAHB6YxPTGgCbcFPFTTYGVAR3E0s3BmzCTRU32RhQEdxNLL17BvwFAqTXUObFJP4AAAAASUVORK5CYII=" width="30" height="30">
+      <a class="FooterLinks" href="Shop.html"><h4>Instagram</h4></a>
+      <img class="ContactIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAACjElEQVRIS5WWgVGVQQyEdysQK5BXgViBWoFQgVqBWIFQgViBUoFQgVKBWIHQgVYQ5zvv/snLu3+eZObNwH+X22ST7J21xyLiUNJzSceSDiS9SC63kn5L+i7p2jb/T81rCx3gg6Q3+4JJ63eSzmxfVp8pUEScSQJkzX727J6sbCDDE9tk22wLKCKg5uMkixtJXyRdZWcOiIijTuuppEclu2djfwXisNdp8x9AbV/to68HeVH8qdlLwBagiCAishkGPYCsFngGHhE12HPbZw2oF/5XyeTINsVlHUrfdUrpQrgn+usS3Ft8IoIa0anDNgOoRkEhG10d5JskalGNbJfvtsd5jAA+w957ks2N7WVWIoLDnian+55R/vavszpQD5CsR3NcA8ScfE4H5Wxqm1/abnM1q6ntJbtC3y1AUPRqAJWoqNGYlXvb1GexiMjrlYmtIAHKhVs2R8QuzzYNkIGmvj3jHaBIvugVmjajhnng4DWgT7YZkWa1zckoA7Wen0Uk6fFEFaa+3X872wK0RFX1LteuH0S98uwtQU667pyMcvvmGtWO26JuIryZDej/mlje1K67s73pEdVmQFBP+hptzECiGMNafScD3r4DVDVuk6Qnty8HjosOIASXocyDS12gdIwBew6bqHaZ/5Eiy0NZs8pN17IrFOV1FOR4iPLQpiqC3CNNtfs8oYVjcIny1DbfWKeW+S4CgLWLnYtvondQAlhT734g9TjI33L4nLG2xr58H1XNAwzd2xrSfPhD/t53w3IWQFBB6y8ZpkxpjPFKYk8b+Go7j5Ou5mhavv+zH2D8AMjtzZ6toc1Oa68g2pPI8vvhf5h6GFCiBUBanB9/k0XOlHfFeEAy0Kvvi79RbGR4P+bjSgAAAABJRU5ErkJggg==" width="27" height="27">
+      <a class="FooterLinks" href="about.html"><h4>Email Unbeaten</h4></a>
 
 
-  </table>
-
-
+    </div>
+    <div class="col-4">
+      <h2 class="FooterTitle">Subscribe</h2>
+      <form id="form" name="EmailForm">
+        <h4 class="FooterLinks">  Unbeat your Inbox!</h4> <br>
+          <input type="email" placeholder="Email Address"><br><br>
+          <input class="footer-button" type="button" onclick="send(this.form);" value="Sign Me Up!">
+</form>
+    </div>
   </div>
 
-</div>
 
 </footer>
 </html>

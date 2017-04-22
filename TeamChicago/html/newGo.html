@@ -189,14 +189,15 @@ function carousel() {
 
 </div>
 
+
 <footer>
   <div class="row">
     <div class="col-4">
       <h2 class="FooterTitle">Site</h2>
-      <a class="FooterLinks" href="Dine.html"><h4>Dine</h4></a>
-      <a class="FooterLinks" href="Go.html"><h4>Go</h4></a>
-      <a class="FooterLinks" href="Shop.html"><h4>Shop</h4></a>
-      <a class="FooterLinks" href="about.html"><h4>About Unbeaten</h4></a>
+      <a class="FooterLinks" href="../html/newDine.html"><h4>Dine</h4></a>
+      <a class="FooterLinks" href="../html/newGo.html"><h4>Go</h4></a>
+      <a class="FooterLinks" href="../html/shop.html"><h4>Shop</h4></a>
+      <a class="FooterLinks" href="../html/about.html"><h4>About Unbeaten</h4></a>
     </div>
     <div class="col-4">
       <h2 class="FooterTitle">Contact</h2>
@@ -213,12 +214,14 @@ function carousel() {
     </div>
     <div class="col-4">
       <h2 class="FooterTitle">Subscribe</h2>
-      <a class="FooterLinks" href="Dine.html"><h4>Dine</h4></a>
-      <a class="FooterLinks" href="Go.html"><h4>Go</h4></a>
-      <a class="FooterLinks" href="Shop.html"><h4>Shop</h4></a>
-      <a class="FooterLinks" href="about.html"><h4>About Unbeaten</h4></a>
+      <form id="form" name="EmailForm">
+        <h4 class="FooterLinks">  Unbeat your Inbox!</h4> <br>
+          <input type="email" placeholder="Email Address"><br><br>
+          <input class="footer-button" type="button" onclick="send(this.form);" value="Sign Me Up!">
+</form>
     </div>
   </div>
-</footer>
 
+
+</footer>
 </html>
