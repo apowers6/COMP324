@@ -144,8 +144,8 @@ font-family: PT Sans;
 
 .overlay {
   position:absolute;
-    top:10%;
-    left:14%;
+    top:20%;
+    left:18%;
     z-index:1;
     text-align: center;
 }

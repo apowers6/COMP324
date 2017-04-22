@@ -79,4 +79,3 @@ element total widths and heights now include padding and border
   [class*="col-"] + [class*="col-"] {
     margin-left:0;
   }
-}
