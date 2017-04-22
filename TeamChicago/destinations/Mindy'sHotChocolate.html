@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title></title>
 	<meta charset="utf-8" />
-  <link href="places.css" rel="stylesheet" />
+  <link href="../css/places.css" rel="stylesheet" />
+  <link href="../css/grid.css" rel="stylesheet" />
+
   <link href='//fonts.googleapis.com/css?family=Arya' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i" rel="stylesheet">
@@ -17,15 +20,14 @@
     <hr width="100%" color="#00000" size="4">
     <!--horizontal navigation with 4 links-->
     <ul class="nav">
-                  <li class="first active"> <a href="new home.html">Home</a> </li>
-                  <li> <a href="newDine.html">Dine</a> </li>
-                  <li> <a href="newGo.html">Go</a> </li>
-                  <li> <a href="shop.html">Shop</a> </li>
-                  <li> <a href="about.html">About</a> </li>
+                  <li class="first active"> <a href="../html/new home.html">Home</a> </li>
+                  <li> <a href="../html/newDine.html">Dine</a> </li>
+                  <li> <a href="../html/newGo.html">Go</a> </li>
+                  <li> <a href="../html/shop.html">Shop</a> </li>
+                  <li> <a href="../html/about.html">About</a> </li>
     </ul>
-
-
 </head>
+
 <body>
   <header id="dineheader">
     <!--This is the header of the page in center-->
@@ -34,26 +36,54 @@
 
 
   <article>
-    <img class="images-places" src=" images/Mindy'sHotChocolate.jpg"width="200"height="100">
-
+    <img class="images-places" src="../images/mindy's.jpg"width="200"height="100">
+    <div class="col-12">
       <header >
           <h1> Mindy's Hot Chocolate</h1>
       </header>
+</div>
 
-        <p> <h4> Description for Ann Sather's (menu items, locations, famous dishes, etc)
+<div class="col-6">
+        <p> <h4> Mindy's Hot Chocolate is a corky native Chicago spot. With unique brunch, lunch, dinner,
+          and dessert menus, any customer is destine to find something they like. Unbeaten reccomends the doughnuts and
+          -of course- the classic hot chocolate options. The malted milk chocolate milkshake is also a favorite.
 </h4> </p>
 <br>
-<p><h4> 1747 N Damen Ave.<br />
-  773-489-1747<br />
+<p><h4> Address: 1747 N Damen Ave.<br />
+  Phone: 773-489-1747<br />
   Mon: Closed<br />
   Tue: 5:30pm-10pm<br />
   Wed-Thu: 11:30am-2pm & 5:30pm-10pm<br />
   Fri: 11:30am-2pm & 5:30pm-12am<br />
-  Sat: 10:am-2pm & 5:30pm-12am<br />
+  Sat: 10am-2pm & 5:30pm-12am<br />
   Sun: 10am-2pm & 5:30pm-10pm<br />
 
-          <a class="places-links" href="http://www.hotchocolatechicago.com/"><h3>www.hotchocolatechicago.com</h3></a>
 
+          <a class="places-links" href="http://www.hotchocolatechicago.com/"><h3>www.hotchocolatechicago.com</h3></a>
+</div>
   </article>
-</body>
-</html>
+
+  <div class="col-6">
+  <div id="map">
+    <script>
+        function initMap() {
+          var uluru = {lat: 41.913718, lng: -87.677076};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgpfnTFtCelhTbYBNE1mxauIjGHiEt03U&callback=initMap">
+      </script>
+  </div>
+  </div>
+
+  </body>
+
+  </html>

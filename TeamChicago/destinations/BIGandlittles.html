@@ -1,10 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
     <title></title>
 	<meta charset="utf-8" />
-    <link href="../css/places.css" rel="stylesheet" />
+  <link href="../css/places.css" rel="stylesheet" />
+  <link href="../css/grid.css" rel="stylesheet" />
+
   <link href='//fonts.googleapis.com/css?family=Arya' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i" rel="stylesheet">
@@ -18,11 +20,11 @@
     <hr width="100%" color="#00000" size="4">
     <!--horizontal navigation with 4 links-->
     <ul class="nav">
-                  <li class="first active"> <a href="new home.html">Home</a> </li>
-                  <li> <a href="newDine.html">Dine</a> </li>
-                  <li> <a href="newGo.html">Go</a> </li>
-                  <li> <a href="shop.html">Shop</a> </li>
-                  <li> <a href="about.html">About</a> </li>
+                  <li class="first active"> <a href="../html/new home.html">Home</a> </li>
+                  <li> <a href="../html/newDine.html">Dine</a> </li>
+                  <li> <a href="../html/newGo.html">Go</a> </li>
+                  <li> <a href="../html/shop.html">Shop</a> </li>
+                  <li> <a href="../html/about.html">About</a> </li>
     </ul>
 
 
@@ -34,12 +36,14 @@
     </header>
 
     <article>
-        <img class="images-places" src="images/b&l.jpg" width="200"height="100"  />
+        <img class="images-places" src="../images/Big-and-littles.jpg" width="200"height="100"  />
+        <div class="col-12"
         <header id="bigheader">
             <!--This is the header of the page in center-->
-            <h1 id="bighead1"> BIG & little's </h1>
+            <h1 id="bighead1"> Big & Little's </h1>
         </header>
-
+      </div>
+      <div class="col-6">
         <p>
             <h4>
                 Big and Little's is the favorite spot in the city for huge number of people.
@@ -60,6 +64,28 @@
         </p><br>
         <a class= "places-links" href="https://www.bigandlittleschicago.com/"><h3>www.bigandlittleschicago.com</h3></a>
         </p>
+      </div>
     </article>
+<div class="col-6">
+<div id="map">
+  <script>
+      function initMap() {
+        var uluru = {lat: 41.898363, lng: -87.637391};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgpfnTFtCelhTbYBNE1mxauIjGHiEt03U&callback=initMap">
+    </script>
+</div>
+</div>
 </body>
+
 </html>

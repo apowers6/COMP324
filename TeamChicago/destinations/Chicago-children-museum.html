@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title></title>
 	<meta charset="utf-8" />
-  <link href="places.css" rel="stylesheet" />
+  <link href="../css/places.css" rel="stylesheet" />
+  <link href="../css/grid.css" rel="stylesheet" />
+
   <link href='//fonts.googleapis.com/css?family=Arya' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i" rel="stylesheet">    <ul class="head-stars">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i" rel="stylesheet">
+    <ul class="head-stars">
     							<li> <span style="font-size:300%;color:#F70808; margin: 0px;">&bigstar;</span> </li>
                   <li> <span style="font-size:300%;color:#F70808; margin: 0px;">&bigstar;</span> </li>
                   <li> <h1> Unbeaten </h1> </li>
@@ -16,14 +20,12 @@
     <hr width="100%" color="#00000" size="4">
     <!--horizontal navigation with 4 links-->
     <ul class="nav">
-                  <li class="first active"> <a href="new home.html">Home</a> </li>
-                  <li> <a href="newDine.html">Dine</a> </li>
-                  <li> <a href="newGo.html">Go</a> </li>
-                  <li> <a href="shop.html">Shop</a> </li>
-                  <li> <a href="about.html">About</a> </li>
+                  <li class="first active"> <a href="../html/new home.html">Home</a> </li>
+                  <li> <a href="../html/newDine.html">Dine</a> </li>
+                  <li> <a href="../html/newGo.html">Go</a> </li>
+                  <li> <a href="../html/shop.html">Shop</a> </li>
+                  <li> <a href="../html/about.html">About</a> </li>
     </ul>
-
-
 </head>
 <body>
     <header id="dineheader">
@@ -32,14 +34,14 @@
     </header>
 
     <article>
-      <img class="images-places" src="images/chicago-childrens-museum.jpg"width="200"height="100">
-
+      <img class="images-places" src="../images/chicago-childrens-museum.jpg"width="200"height="100">
+      <div class="col-12">
         <header id="Chicago-children-museum">
             <!--This is the header of the page in center-->
             <h1 id="Chicago-children-museum head1"> Chicago Children's Museum </h1>
         </header>
-
-
+</div>
+<div class="col-6">
         <p><h4>
            The Chicago Children's Museum is located at Navy Pier in Chicago,
             Illinois. It was founded in 1982 by The Junior League of Chicago who
@@ -51,20 +53,43 @@
 
           <p><h4> Address: 700 E Grand Ave, Chicago, IL 60611
               Hours:
-              Thursday	10AM–8PM <br>
-              Friday	  10AM–5PM<br>
-              Saturday	10AM–5PM<br>
-              Sunday	  10AM–5PM<br>
-              Monday	  10AM–5PM<br>
-              Tuesday	  10AM–5PM<br>
-              Wednesday	10AM–5PM<br>
+              Monday:	  10AM–5PM<br>
+              Tuesday:	  10AM–5PM<br>
+              Wednesday:	10AM–5PM<br>
+              Thursday:	10AM–8PM <br>
+              Friday:	  10AM–5PM<br>
+              Saturday:	10AM–5PM<br>
+              Sunday:	  10AM–5PM<br>
               Phone: (312) 527-1000<br>
-              Tax deductibility code: 501(c)(3)<br>
-              Founded: 1982
+
           </h4></p><br>
 
             <a class="places-links" href="http://www.chicagochildrensmuseum.org"><h3>www.chicagochildrensmuseum.org</h4></a>
         </p>
+      </div>
     </article>
-</body>
-</html>
+
+    <div class="col-6">
+    <div id="map">
+      <script>
+          function initMap() {
+            var uluru = {lat: 41.891464, lng: -87.608726};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgpfnTFtCelhTbYBNE1mxauIjGHiEt03U&callback=initMap">
+        </script>
+    </div>
+    </div>
+
+    </body>
+
+    </html>

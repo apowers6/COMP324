@@ -93,6 +93,7 @@ td.dine-links{
   padding-bottom: 50px;
 }
 
+
 td.image-cells{
   width: 120px;
   padding-bottom: 50px;
@@ -104,13 +105,15 @@ img.dine-images{
 
 .dine-links a{
   color: #000000;
+  font-weight: bold;
   text-decoration: none;
   text-align: left;
   font-family: 'Lato', sans-serif;
+  font-size: 1.1em;
 }
 
 .dine-links a:hover {
-  color: #5A6AD3;
+  color: #7EB768;
 }
 
 
