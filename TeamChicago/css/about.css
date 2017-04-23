@@ -1,4 +1,3 @@
-/* Heading styles */
 h1 {
     display: inline-block;
     font-size: 2.5em;
@@ -12,22 +11,23 @@ h1 {
 h2 {
   font-size: 1.9em;
   margin top: 0px;
-  font-family: 'Lato', sans-serif;
-  text-align: left;
+  font-family: PT Sans;
+  text-align: center;
 }
 
 
 h3{
-  display: inline-block;
+    display: inline-block;
   font-size: 1.2em;
+  margin: 10px;
   font-family: PT Sans;
-  text-align: left;
+  text-align: center;
   font-weight: lighter;
+
 }
 
 h3.footer-header {
   text-align: left;
-
 }
 
 h4{
@@ -54,47 +54,151 @@ font-family: PT Sans;
     padding: 45px;
   }
 
-.nav{
-    list-style:none;
-    margin:0;
-    padding:0px;
-    text-align: center;
-    font-family: PT Sans;
+  .nav{
+      list-style:none;
+      margin:0;
+      margin-bottom: 10px;
+      padding:0px;
+      text-align: center;
+      font-family: PT Sans;
+  }
+  .nav li{
+      display:inline;
+      padding-right: 10px;
+      padding-top: 10px;
+
+  }
+  .nav a{
+      display:inline-block;
+      padding-right:10px;
+      text-decoration: none;
+      color: black;
+      font-size: 1.2em;
+      padding-top: 10px;
+
+  }
+  .nav li a:hover {
+    color: #E45656;
+  }
+
+#BeanVid {
+  position: stretch;
+    width: 100%;
+    height: 50%;
+    padding: 0px;
+    background: #ffffff;
+    opacity: 0.3;
+
 }
 
-.nav li{
-    display:inline;
-    padding: 10px;
-}
-
-.nav a{
+.dine-button{
     display:inline-block;
-    padding:10px;
-    text-decoration: none;
-    color: black;
-    font-size: 1.2em;
+    width:175px;
+    height:175px;
+     line-height:50px;
+     border: 2px solid #79AAC4;
+     border-radius: 50%;
+     color: white;
+     text-align:  center;
+     text-decoration:none;
+     font-size: 2em;
+     background: #79AAC4;
+     box-shadow: 0 0 3px gray;
+     font-weight:bold;
+     padding: 25px;
+     margin: 50px;
+
+ }
+ .dine-button:hover {
+     background: #E45656;
+ }
+
+ .go-button{
+     display:inline-block;
+     width:175px;
+     height:175px;
+      line-height:50px;
+      border: 2px solid #A37FAF;
+      border-radius: 50%;
+      color: white;
+      text-align:  center;
+      text-decoration:none;
+      font-size: 2em;
+      background: #A37FAF;
+      box-shadow: 0 0 3px gray;
+      font-weight:bold;
+      padding: 25px;
+      margin: 50px;
+
+
+  }
+  .go-button:hover {
+    background: #E45656;
+ }
+
+  .shop-button{
+      display:inline-block;
+      width:175px;
+      height:175px;
+       line-height:50px;
+       border: 2px solid #7EB768;
+       border-radius: 50%;
+       color: white;
+       text-align:  center;
+       text-decoration:none;
+       font-size: 2em;
+       background: #7EB768;
+       box-shadow: 0 0 3px gray;
+       font-weight:bold;
+       padding: 25px;
+       margin: 50px;
+
+
+   }
+   .shop-button:hover {
+       background: #E45656;
+
+   }
+
+#HomeButtons{
+  position: relative;
 }
 
-.nav li a:hover {
-  color: #E45656;
-}
-
-table{
-  width: 100%;
-}
-
-td img.about-icon{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-table.about-table{
-  margin: 50px;
-  width: 90%;
+#HomeButtons video{
+  position:relative;
+    z-index:0;
 }
 
 
+
+.overlay {
+  position:absolute;
+    top:20%;
+    z-index:1;
+    text-align: center;
+}
+
+
+.abouttext-heading{
+  color: white;
+  font-size: 2em;
+}
+
+.abouttext{
+  color: white;
+  font-size: 1.5em;
+  font-weight: lighter;
+  text-align: left;
+}
+.overlay a{
+  padding: 20px;
+
+}
+
+.ButtonImages {
+  display: block;
+  margin: auto;
+}
 
 .FooterTitle{
   text-align: left;
@@ -155,4 +259,51 @@ footer{
   font-family: 'Open Sans', sans-serif;
   font-style: italic;
   text-decoration: none;
+}
+
+
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: PT Sans;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: PT Sans;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {background-color: #E45656}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #E45656;
 }

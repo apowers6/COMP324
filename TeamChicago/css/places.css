@@ -103,3 +103,59 @@ a.places-links:hover{
 h1, h2, h3, h4, h5, h6{
   line-height: 25px;
 }
+
+#map{
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
+
+.Useful-Go{
+  color: #E45656;
+}
+
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: PT Sans;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: PT Sans;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {background-color: #E45656}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #E45656;
+}

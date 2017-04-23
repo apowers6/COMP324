@@ -1,0 +1,134 @@
+
+  #Article{
+    height: 370px;
+    width: 350px;
+    text-align: center;
+    color: black;
+    margin: 10px;
+    margin-left: 170px;
+    border: 3px solid #79AAC4;
+    padding: 5px;
+ }
+
+ #Article:hover{
+   box-shadow: 2px 2px 2px 2px #BDBABA;
+ }
+ #Article:hover .article-button{
+   background: #79AAC4
+ }
+
+ #Article.article-button:hover a {
+   font-size: 12px;
+   font-weight: bold;
+   color: white;
+   text-decoration: none;
+ }
+
+ #Article:hover img{
+  opacity: 1;
+ }
+
+
+ #Article h3{
+   font-size: 1.5em;
+   font-weight: bold;
+   opacity: 1;
+   vertical-align: middle;
+   display: block;
+ }
+
+ #Article h4{
+   font-size: 1em;
+   vertical-align: middle;
+   display: block;
+ }
+
+
+   #ArticleGo{
+     height: 370px;
+     width: 350px;
+     text-align: center;
+     color: black;
+     margin: 10px;
+     margin-left: 170px;
+     border: 3px solid #A37FAF;
+     padding: 5px;
+  }
+
+  #ArticleGo:hover{
+    box-shadow: 2px 2px 2px 2px #BDBABA;
+  }
+  #ArticleGo:hover .article-button{
+    background: #A37FAF
+  }
+
+  #ArticleGo.article-button:hover a {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+
+  #ArticleGo:hover img{
+   opacity: 1;
+  }
+
+
+  #ArticleGo h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    opacity: 1;
+    vertical-align: middle;
+    display: block;
+  }
+
+  #ArticleGo h4{
+    font-size: 1em;
+    vertical-align: middle;
+    display: block;
+  }
+
+
+     #ArticleShop{
+       height: 370px;
+       width: 350px;
+       text-align: center;
+       color: black;
+       margin: 10px;
+       margin-left: 170px;
+       border: 3px solid #7EB768;
+       padding: 5px;
+    }
+
+    #ArticleShop:hover{
+      box-shadow: 2px 2px 2px 2px #BDBABA;
+    }
+    #ArticleShop:hover .article-button{
+      background: #7EB768;
+    }
+
+    #ArticleShop.article-button:hover a {
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+
+    #ArticleShop:hover img{
+     opacity: 1;
+    }
+
+
+    #ArticleShop h3{
+      font-size: 1.5em;
+      font-weight: bold;
+      opacity: 1;
+      vertical-align: middle;
+      display: block;
+    }
+
+    #ArticleShop h4{
+      font-size: 1em;
+      vertical-align: middle;
+      display: block;
+    }

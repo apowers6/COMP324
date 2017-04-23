@@ -79,7 +79,7 @@ font-family: PT Sans;
 
   }
   .nav li a:hover {
-    color: #79AAC4;
+    color: #E45656;
   }
 
   #TitleImage{
@@ -87,6 +87,11 @@ font-family: PT Sans;
     overflow: auto;
     float: left;
   }
+
+
+#PictureTop{
+  max-height: 400px;
+}
 
 
   #sidebar{
@@ -99,7 +104,7 @@ font-family: PT Sans;
   #sidebar h3{
     font-size: 1.4em;
     font-weight: bolder;
-    color: #79AAC4;
+    color: #E45656;
   }
 
   #sidebar-articles{
@@ -116,7 +121,7 @@ font-family: PT Sans;
 
   }
   .sidebar-links h4:hover{
-    color: #79AAC4;
+    color: #E45656;
 
   }
 
@@ -137,11 +142,11 @@ font-family: PT Sans;
   {
   	border-radius: 10px;
   	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-  	background-color: #79AAC4;
+  	background-color: #E45656;
   }
 
   .button {
-      border-color: #79AAC4;
+      border-color: #E45656;
       border-style: solid;
       border-width: 3px;
       padding: 10px 15px;
@@ -159,9 +164,9 @@ font-family: PT Sans;
   .button:hover{
     border: 3px solid;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
-    outline-color: #79AAC4;
+    outline-color: #E45656;
     outline-offset: 15px;
-    text-shadow: 1px 1px 2px #79AAC4;
+    text-shadow: 1px 1px 2px #E45656;
   }
 
   .button a{
@@ -186,7 +191,7 @@ font-family: PT Sans;
 }
 
 .article-button{
-  border-color: #79AAC4;
+  border-color: black;
   border-style: solid;
   border-width: 3px;
   padding: 10px 15px;
@@ -206,7 +211,7 @@ font-family: PT Sans;
 }
 
 .article-button:hover{
-  background: #79AAC4
+  background: #E45656
 }
 
 .article-button:hover a {
@@ -222,7 +227,7 @@ font-family: PT Sans;
   opacity: .6;
 }
 
-.title-button{
+.title-button-dine{
   border-color: black;
   border-style: solid;
   border-width: 3px;
@@ -235,24 +240,87 @@ font-family: PT Sans;
   background: transparent;
 }
 
-.title-button a{
+.title-button-dine a{
   font-size: 12px;
   font-weight: bold;
   color: black;
   text-decoration: none;
 }
 
-.title-button:hover{
+.title-button-dine:hover{
   background: #79AAC4
 }
 
-.title-button:hover a {
+.title-button-dine:hover a {
   font-size: 12px;
   font-weight: bold;
   color: white;
   text-decoration: none;
 }
 
+
+.title-button-go{
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border-radius: 8px;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.title-button-go a{
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.title-button-go:hover{
+  background: #A37FAF
+}
+
+.title-button-go:hover a {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+
+.title-button-shop{
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border-radius: 8px;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.title-button-shop a{
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.title-button-shop:hover{
+  background: #7EB768
+}
+
+.title-button-shop:hover a {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
 
 .FooterTitle{
   text-align: left;
@@ -317,6 +385,7 @@ footer{
 }
 
 
+
 .dropbtn {
     background-color: white;
     color: black;
@@ -352,12 +421,12 @@ footer{
     font-size: 14px;
 }
 
-.dropdown-content a:hover {background-color: #79AAC4}
+.dropdown-content a:hover {background-color: #E45656}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #79AAC4;
+    background-color: #E45656;
 }
