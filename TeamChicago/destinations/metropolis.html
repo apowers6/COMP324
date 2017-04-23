@@ -36,64 +36,60 @@
                     </div>
                   <li> <a href="../html/about.html">About</a> </li>
     </ul>
-</head>
 
-  <body>
+
+</head>
+<body>
     <header id="dineheader">
-      <!--This is the header of the page in center-->
-      <h1 id="Gohead1">Go </h1>
+        <!--This is the header of the page in center-->
+        <h1 id="dinehead1"> Dine </h1>
     </header>
 
     <article>
-      <img class="images-places" src="../images/Navy Pier.jpg"width="300"height="200">
-      <div clas="col-12">
-        <header id="Navy Pier">
+        <img class="images-places" src="../images/metropolis.jpg" width="200"height="100"  />
+        <div class="col-12">
+        <header id="bigheader">
             <!--This is the header of the page in center-->
-            <h1 id="Navy Pier head1"> Navy Pier </h1>
+            <h1 id="bighead1"> Metropolis Coffee Company </h1>
         </header>
+      </div>
+      <div class="col-6">
+        <p> <h4> Small batch artisan roasting in the heart of Chicago. This coffee company is blocks away from
+          Loyola's campus, and is a student favorite. The coffee is suberp and the snacks are just as good!
+        </h4> </p> <br>
+        <p><h4>
+        1039 W Granville Ave, Chicago, IL 60660.<br />
+        (773) 764-0400<br />
+        Monday-Friday: 6:30am-8pm <br />
+        Saturday: 7:00am-8:00pm <br />
+        Sunday: 7:30am-8:00pm<br/>
+</h4></p>
+
+          <a class="places-links" href="http://www.metropoliscoffee.com"><h3>www.metropoliscoffee.com</h3></a>
 </div>
+</article>
 
 <div class="col-6">
-          <p> <h4>Navy Pier is a 3,300-foot-long (1,010 m) pier on the Chicago shoreline
-             of Lake Michigan. It is located in the Streeterville neighborhood of the Near
-              North Side community area. The Navy Pier currently encompasses more than fifty
-              acres of parks, gardens, shops, restaurants, family attractions and exhibition
-              facilities and is the top leisure destination in the Midwest, drawing nearly nine
-               million visitors annually. It is one of the most visited attractions in the
-               entire Midwestern United States and is Chicago's number one tourist attraction. </h4> </p>
-</b> <br>
-    <p> <h4> Address: 600 E Grand Ave, Chicago, IL 60611<br>
-     Hours: 9:00am-9:00pm <br>
-     Phone: (312) 595-7437<br>
-
-   </h4></p><br>
-
-            <a class="places-links" href="https://navypier.com"> <h3>www.navypier.com</h3></a>
+<div id="map">
+  <script>
+      function initMap() {
+        var uluru = {lat: 41.994580, lng: -87.657255};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgpfnTFtCelhTbYBNE1mxauIjGHiEt03U&callback=initMap">
+    </script>
 </div>
-    </article>
+</div>
 
+</body>
 
-    <div class="col-6">
-    <div id="map">
-      <script>
-          function initMap() {
-            var uluru = {lat: 41.891569, lng: -87.607184};
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 15,
-              center: uluru
-            });
-            var marker = new google.maps.Marker({
-              position: uluru,
-              map: map
-            });
-          }
-        </script>
-        <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgpfnTFtCelhTbYBNE1mxauIjGHiEt03U&callback=initMap">
-        </script>
-    </div>
-    </div>
-
-    </body>
-
-    </html>
+</html>

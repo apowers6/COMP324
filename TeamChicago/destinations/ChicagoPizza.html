@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -20,11 +20,21 @@
     <hr width="100%" color="#00000" size="4">
     <!--horizontal navigation with 4 links-->
     <ul class="nav">
-        <li class="first active"> <a href="../html/new home.html">Home</a> </li>
-        <li> <a href="../html/newDine.html">Dine</a> </li>
-        <li> <a href="../html/newGo.html">Go</a> </li>
-        <li> <a href="../html/shop.html">Shop</a> </li>
-        <li> <a href="../html/about.html">About</a> </li>
+                  <li class="first active"> <a href="../html/new home.html">Home</a> </li>
+                  <li> <a href="../html/newDine.html">Dine</a> </li>
+                  <li> <a href="../html/newGo.html">Go</a> </li>
+                  <li> <a href="../html/shop.html">Shop</a> </li>
+                  <div class="dropdown">
+                    <button class="dropbtn"> <a>Neighborhoods</a></button>
+                    <div class="dropdown-content">
+                        <a href="../neighborhoods/rogerspark.html">Rogers Park</a>
+                            <a href="../neighborhoods/wickerpark.html">Wicker Park</a>
+                            <a href="#">West Loop</a>
+                            <a href="#">Lincoln Park</a>
+
+                      </div>
+                    </div>
+                  <li> <a href="../html/about.html">About</a> </li>
     </ul>
 </head>
 
@@ -45,11 +55,11 @@
         <div class="col-6">
             <p>
                 <h4>
-                    The Chicago Pizza and Oven Grinder Company is not for Chicago pizza purists. 
+                    The Chicago Pizza and Oven Grinder Company is not for Chicago pizza purists.
                     If you like a strictly deep-dish diet while in the Windy City then head uptown to Geno’s or Pizzeria Due.
-                    However, if you are open to experiencing pizza in a whole new form, in a place that has been perfecting 
-                    their art for nearly 40 years. It is Situated on a historic brownstone street in the Lincoln Park 
-                    neighborhood of Chicago. The Chicago Pizza and Oven Grinder Company has been serving up a focused menu of 
+                    However, if you are open to experiencing pizza in a whole new form, in a place that has been perfecting
+                    their art for nearly 40 years. It is Situated on a historic brownstone street in the Lincoln Park
+                    neighborhood of Chicago. The Chicago Pizza and Oven Grinder Company has been serving up a focused menu of
                     pizza pot pies, grinders, and salads since 1972.
 
                 </h4>
@@ -74,7 +84,7 @@
         <div id="map">
             <script>
       function initMap() {
-        var uluru = {lat: 41.893970, lng: -87.620775};
+        var uluru = {lat: 41.920697, lng: -87.637517};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: uluru

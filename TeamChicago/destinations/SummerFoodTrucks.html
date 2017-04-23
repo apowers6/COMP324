@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -20,11 +20,21 @@
     <hr width="100%" color="#00000" size="4">
     <!--horizontal navigation with 4 links-->
     <ul class="nav">
-        <li class="first active"> <a href="../html/new home.html">Home</a> </li>
-        <li> <a href="../html/newDine.html">Dine</a> </li>
-        <li> <a href="../html/newGo.html">Go</a> </li>
-        <li> <a href="../html/shop.html">Shop</a> </li>
-        <li> <a href="../html/about.html">About</a> </li>
+                  <li class="first active"> <a href="../html/new home.html">Home</a> </li>
+                  <li> <a href="../html/newDine.html">Dine</a> </li>
+                  <li> <a href="../html/newGo.html">Go</a> </li>
+                  <li> <a href="../html/shop.html">Shop</a> </li>
+                  <div class="dropdown">
+                    <button class="dropbtn"> <a>Neighborhoods</a></button>
+                    <div class="dropdown-content">
+                        <a href="../neighborhoods/rogerspark.html">Rogers Park</a>
+                            <a href="../neighborhoods/wickerpark.html">Wicker Park</a>
+                            <a href="#">West Loop</a>
+                            <a href="#">Lincoln Park</a>
+
+                      </div>
+                    </div>
+                  <li> <a href="../html/about.html">About</a> </li>
     </ul>
 
 
@@ -41,16 +51,16 @@
         <div class="col-12">
             <header>
                 <!--This is the header of the page in center-->
-                <h1> Summer Food Truck </h1>
+                <h1> Summer Food Truck Festival</h1>
             </header>
         </div>
         <div class="col-6">
             <p>
                 <h4>
-                    Food Trucks are as American as Apple Pie. Starting in 1866 with the first Chuck Wagon up until today, 
-                    food trucks are here to stay and so are they! You've seen them on TV, you've heard about them from 
-                    your friends, and now they’re coming back for the 3rd annual Food Truck Festival Saturday, June 24th, 2017 
-                    and Sunday, June 25th, 2017. The Chicago Food Truck Festival will continue to feature 50+ gourmet food 
+                    Food Trucks are as American as Apple Pie. Starting in 1866 with the first Chuck Wagon up until today,
+                    food trucks are here to stay and so are they! You've seen them on TV, you've heard about them from
+                    your friends, and now they’re coming back for the 3rd annual Food Truck Festival Saturday, June 24th, 2017
+                    and Sunday, June 25th, 2017. The Chicago Food Truck Festival will continue to feature 50+ gourmet food
                     trucks serving a variety of delicious dishes and tasty treats. This year they are continuing their Sangria Graden!
                     And the event admission is free this year as well!
                 </h4>
@@ -71,7 +81,7 @@
         <div id="map">
             <script>
           function initMap() {
-            var uluru = {lat: 41.883472, lng: -87.630316};
+            var uluru = {lat: 41.852820, lng: -87.622512};
             var map = new google.maps.Map(document.getElementById('map'), {
               zoom: 15,
               center: uluru

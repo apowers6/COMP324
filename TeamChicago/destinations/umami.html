@@ -36,64 +36,67 @@
                     </div>
                   <li> <a href="../html/about.html">About</a> </li>
     </ul>
-</head>
 
-  <body>
+
+</head>
+<body>
     <header id="dineheader">
-      <!--This is the header of the page in center-->
-      <h1 id="Gohead1">Go </h1>
+        <!--This is the header of the page in center-->
+        <h1 id="dinehead1"> Dine </h1>
     </header>
 
     <article>
-      <img class="images-places" src="../images/Navy Pier.jpg"width="300"height="200">
-      <div clas="col-12">
-        <header id="Navy Pier">
+        <img class="images-places" src="../images/umami.jpg" width="200"height="100"  />
+        <div class="col-12"
+        <header id="bigheader">
             <!--This is the header of the page in center-->
-            <h1 id="Navy Pier head1"> Navy Pier </h1>
+            <h1 id="bighead1"> Umami Burger Wicker Park </h1>
         </header>
-</div>
+      </div>
+      <div class="col-6">
+        <p>
+            <h4>
+              Umami means “deliciousness.” Beyond sweet, sour, salty, and bitter, the fifth taste
+              of umami is rich and savory. A word coined by the Japanese, Umami is a powerful force
+              behind many of our food cravings. Umami-rich foods include soy sauce, miso paste and
+              bonito flakes in Asian cuisine; and cured ham, cheese, tomatoes, ketchup and mushrooms
+              in Western cuisine. Backed with a little bit of food-science we analyze ingredients and
+              their flavor profiles to ultimately achieve this sought-after taste. This is one of Wicker Park's
+              most talked about burger joints. Make a stop if you can!
+            </h4>
+        </p>
+        <p>
+            <h4>
+                Address: 1480 N Milwaukee Ave, Chicago, IL 60622<br />
+                Phone: (773) 423-2005<br />
+                Times: Monday-Sunday: 11am-11pm <br/>
 
-<div class="col-6">
-          <p> <h4>Navy Pier is a 3,300-foot-long (1,010 m) pier on the Chicago shoreline
-             of Lake Michigan. It is located in the Streeterville neighborhood of the Near
-              North Side community area. The Navy Pier currently encompasses more than fifty
-              acres of parks, gardens, shops, restaurants, family attractions and exhibition
-              facilities and is the top leisure destination in the Midwest, drawing nearly nine
-               million visitors annually. It is one of the most visited attractions in the
-               entire Midwestern United States and is Chicago's number one tourist attraction. </h4> </p>
-</b> <br>
-    <p> <h4> Address: 600 E Grand Ave, Chicago, IL 60611<br>
-     Hours: 9:00am-9:00pm <br>
-     Phone: (312) 595-7437<br>
-
-   </h4></p><br>
-
-            <a class="places-links" href="https://navypier.com"> <h3>www.navypier.com</h3></a>
-</div>
+            </h4>
+        </p><br>
+        <a class= "places-links" href="https://www.umamiburger.com/"><h3>www.umamiburger.com</h3></a>
+        </p>
+      </div>
     </article>
+<div class="col-6">
+<div id="map">
+  <script>
+      function initMap() {
+        var uluru = {lat: 41.908723, lng: -87.675071};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgpfnTFtCelhTbYBNE1mxauIjGHiEt03U&callback=initMap">
+    </script>
+</div>
+</div>
+</body>
 
-
-    <div class="col-6">
-    <div id="map">
-      <script>
-          function initMap() {
-            var uluru = {lat: 41.891569, lng: -87.607184};
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 15,
-              center: uluru
-            });
-            var marker = new google.maps.Marker({
-              position: uluru,
-              map: map
-            });
-          }
-        </script>
-        <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgpfnTFtCelhTbYBNE1mxauIjGHiEt03U&callback=initMap">
-        </script>
-    </div>
-    </div>
-
-    </body>
-
-    </html>
+</html>
