@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
 	<meta charset="utf-8" />
+  <!--css stylesheets-->
     <link href="../css/Go.Css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/grid.css">
     <a href="https://icons8.com"> </a>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='//fonts.googleapis.com/css?family=Arya' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<title> Unbeaten </title>
+
+    <!-- site title-->
+    <title> Unbeaten </title>
+
+    <!--Unbeaten header-->
     <ul class="head-stars">
     							<li> <span style="font-size:300%;color:#F70808; margin: 0px;">&bigstar;</span> </li>
                   <li> <span style="font-size:300%;color:#F70808; margin: 0px;">&bigstar;</span> </li>
@@ -19,6 +23,8 @@
     </ul>
     <hr width="100%" color="#00000" size="4">
 
+
+    <!--horizontal navigation, with dropdown menu for neighborhoods-->
     <ul class="nav">
                   <li class="first active"> <a href="../html/new home.html">Home</a> </li>
                   <li> <a href="../html/newDine.html">Dine</a> </li>
@@ -29,25 +35,27 @@
                     <div class="dropdown-content">
                         <a href="../neighborhoods/rogerspark.html">Rogers Park</a>
                             <a href="../neighborhoods/wickerpark.html">Wicker Park</a>
-                            <a href="#">West Loop</a>
-                            <a href="#">Lincoln Park</a>
                       </div>
                     </div>
                   <li> <a href="../html/about.html">About</a> </li>
     </ul>
-
-
 </head>
+
+
 <body>
     <header id="dineheader">
-        <!--This is the header of the page in center-->
-        <h1 id="dineheader"> Go </h1>
+      <!--Centered page title-->
+        <h1> Go </h1>
         <h2> Your Map to the Windy City </h2>
-
     </header>
+
+<!--Directory of all Dine destinations, in the form of a table. This is our same work for DEV week.
+We felt it would beneficial for there to be an index for all the destinations-->
 
 <table align="center">
 
+<!--Each row has an image, link title, description, and then another image, link title, description.
+It makes two evenly spaced columns, with specific CSS styling-->
   <tr>
     <td class="image-cells"> <img class="dine-images" src="../images/Art-Institute-of-Chicago.jpg" alt="Art Institute of Chicago"/></td>
     <td class="dine-links"> <a href="../destinations/Art-Institute-of Chicago.html"> Art Institute of Chicago </a> <br> <h4>One of the oldest and largest art museums in the United States. </h4></td>
@@ -116,7 +124,7 @@
   </table>
 </body>
 
-
+<!--footer; three columns, with images next to social media links, and subscribe field to link with database-->
 <footer>
   <div class="row">
     <div class="col-4">
@@ -139,19 +147,16 @@
       <img class="ContactIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAACjElEQVRIS5WWgVGVQQyEdysQK5BXgViBWoFQgVqBWIFQgViBUoFQgVKBWIHQgVYQ5zvv/snLu3+eZObNwH+X22ST7J21xyLiUNJzSceSDiS9SC63kn5L+i7p2jb/T81rCx3gg6Q3+4JJ63eSzmxfVp8pUEScSQJkzX727J6sbCDDE9tk22wLKCKg5uMkixtJXyRdZWcOiIijTuuppEclu2djfwXisNdp8x9AbV/to68HeVH8qdlLwBagiCAishkGPYCsFngGHhE12HPbZw2oF/5XyeTINsVlHUrfdUrpQrgn+usS3Ft8IoIa0anDNgOoRkEhG10d5JskalGNbJfvtsd5jAA+w957ks2N7WVWIoLDnian+55R/vavszpQD5CsR3NcA8ScfE4H5Wxqm1/abnM1q6ntJbtC3y1AUPRqAJWoqNGYlXvb1GexiMjrlYmtIAHKhVs2R8QuzzYNkIGmvj3jHaBIvugVmjajhnng4DWgT7YZkWa1zckoA7Wen0Uk6fFEFaa+3X872wK0RFX1LteuH0S98uwtQU667pyMcvvmGtWO26JuIryZDej/mlje1K67s73pEdVmQFBP+hptzECiGMNafScD3r4DVDVuk6Qnty8HjosOIASXocyDS12gdIwBew6bqHaZ/5Eiy0NZs8pN17IrFOV1FOR4iPLQpiqC3CNNtfs8oYVjcIny1DbfWKeW+S4CgLWLnYtvondQAlhT734g9TjI33L4nLG2xr58H1XNAwzd2xrSfPhD/t53w3IWQFBB6y8ZpkxpjPFKYk8b+Go7j5Ou5mhavv+zH2D8AMjtzZ6toc1Oa68g2pPI8vvhf5h6GFCiBUBanB9/k0XOlHfFeEAy0Kvvi79RbGR4P+bjSgAAAABJRU5ErkJggg==" width="27" height="27">
       <a class="FooterLinks" href="about.html"><h4>Email Unbeaten</h4></a> <br/> <br/> <br/>
       <h3 class="FooterTitle"> Copyright &copy Unbeaten 2017 </h3>
-
-
-
     </div>
+
     <div class="col-4">
       <h2 class="FooterTitle">Subscribe</h2>
       <form id="form" name="EmailForm">
         <h4 class="FooterLinks">  Unbeat your Inbox!</h4> <br>
           <input type="email" placeholder="Email Address"><br><br>
           <input class="footer-button" type="button" onclick="send(this.form);" value="Sign Me Up!">
-</form>
+      </form>
     </div>
   </div>
-
 </footer>
 </html>
