@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Arya'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-
+    <!-- site title-->
     <title> Unbeaten </title>
 </head>
 
+<!--Unbeaten header-->
 <header>
 <div class="row">
   <div class="col-12">
@@ -25,6 +26,8 @@
               <li> <span style="font-size:300%;color:#F70808; margin: 0px;">&bigstar;</span> </li>
     </ul>
     <hr width="100%" color="#00000" size="3">
+
+    <!--horizontal navigation, with dropdown menu for neighborhoods-->
     <ul class="nav">
                   <li class="first active"> <a href="../html/new home.html">Home</a> </li>
                   <li> <a href="../html/newDine.html">Dine</a> </li>
@@ -35,8 +38,6 @@
                     <div class="dropdown-content">
                         <a href="../neighborhoods/rogerspark.html">Rogers Park</a>
                         <a href="../neighborhoods/wickerpark.html">Wicker Park</a>
-                            <a href="#">West Loop</a>
-                            <a href="#">Lincoln Park</a>
                       </div>
                     </div>
                   <li> <a href="../html/about.html">About</a> </li>
@@ -44,17 +45,17 @@
   </div>
 </div>
 
+<!--centered Dine page title, with icons8 icon-->
   <div class="row">
     <div id="PageTitle" class="col-12">
         <img class=TitleImage src="data:image/png;base64,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" width="75" height="75">
-
       <h2> Dine </h2>
 </div>
 </div>
 </header>
 
 <body>
-    <!-- top of page heading -->
+  <!-- sidebar with links to recent articles and subscribe button -->
   <div class="row">
     <div class="col-1"> </div>
     <div id="sidebar" class="col-4">
@@ -68,17 +69,20 @@
       <a class="sidebar-links" href="../destinations/Mindy'sHotChocolate.html"><h4> Cozy Cup for the Frigid Weather</h4></a><br>
     </div>
       <br>
-      <button class="button"> <a href="http://localhost:3000/newuser">Subscribe to Unbeaten!</a></button>
+      <button class="button"> <a href="#">Subscribe to Unbeaten!</a></button>
     </div>
 
+<!-- image slider -->
 <div class="col-4">
-
   <img class="mySlides" src="../images/truck.png" >
   <img class="mySlides" src="../images/ice cream.png" >
   <img class="mySlides" src="../images/pizza.png" >
 </div>
+
+<!-- another column for spacing purposes -->
 <div class="col-3"> </div>
 
+<!-- javascript for image slider. changes image every 3 seconds -->
 <script>
 var myIndex = 0;
 carousel();
@@ -98,9 +102,9 @@ function carousel() {
 
 </div>
 
-<!-- main: articles -->
+<!-- main: headings and article tiles -->
 <main>
-<!--Local chains title-->
+  <!--Centered title-->
   <div id=Article-Title class="row">
     <div class="col-12">
         <h2> Local Spots </h2>
@@ -108,7 +112,7 @@ function carousel() {
     </div>
   </div>
 
-<!--First row articles-->
+  <!--First row tiles, each with Title, picture, description, and button. Implements unique CSS styling-->
 <div class="row">
 
     <div id=Article class="col-4">
@@ -136,7 +140,7 @@ function carousel() {
 
 
 
-<!--Favorite Chains title-->
+  <!--Centered title-->
 <div id=Article-Title class="row">
   <div class="col-12">
   <h2> Favorite Chains </h2>
@@ -145,7 +149,7 @@ function carousel() {
   </div>
 </div>
 
-<!--First row articles-->
+<!--Second row tiles, each with Title, picture, description, and button. Implements unique CSS styling-->
 <div class="row">
   <div id=Article class="col-4">
     <h3> Capital Grille </h3> <br>
@@ -170,7 +174,7 @@ function carousel() {
 
 </div>
 
-<!--Favorite Chains title-->
+<!--Centered title-->
 <div id=Article-Title class="row">
   <div class="col-12">
   <h2> Seasonal Hits </h2>
@@ -179,7 +183,7 @@ function carousel() {
   </div>
 </div>
 
-<!--First row articles-->
+<!--Third row tiles, each with Title, picture, description, and button. Implements unique CSS styling-->
 <div class="row">
   <div id=Article class="col-4">
     <h3> Lincoln Park Farmers Market </h3> <br>
@@ -206,7 +210,7 @@ function carousel() {
 
 
 
-<!--Favorite Chains title-->
+<!--Centered title-->
 <div id=Article-Title class="row">
   <div class="col-12">
   <h2> The Famed Pizza Joints </h2>
@@ -215,7 +219,7 @@ function carousel() {
   </div>
 </div>
 
-<!--First row articles-->
+<!--Fourth row tiles, each with Title, picture, description, and button. Implements unique CSS styling-->
 <div class="row">
   <div id=Article class="col-4">
     <h3> Lou Malnati's Pizzeria </h3> <br>
@@ -240,7 +244,7 @@ function carousel() {
 
 </div>
 
-
+<!--footer; three columns, with images next to social media links, and subscribe field to link with database-->
 <footer>
   <div class="row">
     <div class="col-4">
@@ -263,23 +267,17 @@ function carousel() {
       <img class="ContactIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAACjElEQVRIS5WWgVGVQQyEdysQK5BXgViBWoFQgVqBWIFQgViBUoFQgVKBWIHQgVYQ5zvv/snLu3+eZObNwH+X22ST7J21xyLiUNJzSceSDiS9SC63kn5L+i7p2jb/T81rCx3gg6Q3+4JJ63eSzmxfVp8pUEScSQJkzX727J6sbCDDE9tk22wLKCKg5uMkixtJXyRdZWcOiIijTuuppEclu2djfwXisNdp8x9AbV/to68HeVH8qdlLwBagiCAishkGPYCsFngGHhE12HPbZw2oF/5XyeTINsVlHUrfdUrpQrgn+usS3Ft8IoIa0anDNgOoRkEhG10d5JskalGNbJfvtsd5jAA+w957ks2N7WVWIoLDnian+55R/vavszpQD5CsR3NcA8ScfE4H5Wxqm1/abnM1q6ntJbtC3y1AUPRqAJWoqNGYlXvb1GexiMjrlYmtIAHKhVs2R8QuzzYNkIGmvj3jHaBIvugVmjajhnng4DWgT7YZkWa1zckoA7Wen0Uk6fFEFaa+3X872wK0RFX1LteuH0S98uwtQU667pyMcvvmGtWO26JuIryZDej/mlje1K67s73pEdVmQFBP+hptzECiGMNafScD3r4DVDVuk6Qnty8HjosOIASXocyDS12gdIwBew6bqHaZ/5Eiy0NZs8pN17IrFOV1FOR4iPLQpiqC3CNNtfs8oYVjcIny1DbfWKeW+S4CgLWLnYtvondQAlhT734g9TjI33L4nLG2xr58H1XNAwzd2xrSfPhD/t53w3IWQFBB6y8ZpkxpjPFKYk8b+Go7j5Ou5mhavv+zH2D8AMjtzZ6toc1Oa68g2pPI8vvhf5h6GFCiBUBanB9/k0XOlHfFeEAy0Kvvi79RbGR4P+bjSgAAAABJRU5ErkJggg==" width="27" height="27">
       <a class="FooterLinks" href="about.html"><h4>Email Unbeaten</h4></a> <br/> <br/> <br/>
       <h3 class="FooterTitle"> Copyright &copy Unbeaten 2017 </h3>
-
-
-
     </div>
+
     <div class="col-4">
       <h2 class="FooterTitle">Subscribe</h2>
       <form id="form" name="EmailForm">
         <h4 class="FooterLinks">  Unbeat your Inbox!</h4> <br>
           <input type="email" placeholder="Email Address"><br><br>
-         <button class="footer-button"> <a href="http://localhost:3000/newuser">Subscribe to Unbeaten!</a></button>
-</form>
+          <button class="footer-button"> <a href="http://localhost:3000/newuser">Sign Me Up!</a></button>
+      </form>
     </div>
   </div>
-
-
-
-
 </footer>
 
 </html>
