@@ -1,6 +1,6 @@
 /*
-reset all elements box-sizing property to border-box...
-element total widths and heights now include padding and border
+The flexbox grid implementation is new from DEV week. Abby used class notes to implement this technique.
+The below CSS code is directly from class notes.
 */
 * {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ element total widths and heights now include padding and border
   position: relative;
   float:left;
   padding:5px;
-/*  border: 1px solid black; */
+/*  no border */
 
 }
 
